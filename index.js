@@ -1,6 +1,7 @@
 import fs from 'fs';
 import express from 'express';
 import showdown from 'showdown';
+import renderer from './src/modules/renderer';
 
 const app = express();
 const converter = new showdown.Converter();
@@ -10,7 +11,6 @@ const footer = '<script src="https://button.glitch.me/button.js" data-style="gli
 
 app.use(express.static('public'));
 app.set('views', './views');
-
 
 app.get('/:post', function(req, res) {
   const { params: { post } } = req;

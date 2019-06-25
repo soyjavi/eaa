@@ -1,0 +1,810 @@
+{
+  "{\"filename\":\"/app/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "fs",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "fs"
+              }
+            ]
+          },
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "showdown",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "showdown"
+              }
+            ]
+          },
+          {
+            "source": "./src/modules/renderer",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "renderer"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/index.js",
+      "filenameRelative": "/app/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _fs = require('fs');\n\nvar _fs2 = _interopRequireDefault(_fs);\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _showdown = require('showdown');\n\nvar _showdown2 = _interopRequireDefault(_showdown);\n\nvar _renderer = require('./src/modules/renderer');\n\nvar _renderer2 = _interopRequireDefault(_renderer);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\nvar converter = new _showdown2.default.Converter();\n\nvar head = '<html lang=\"en\"><head><title>Markdown Web Page</title></head><body><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div>';\nvar footer = '<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script></body></html>';\n\napp.use(_express2.default.static('public'));\napp.set('views', './views');\n\napp.get('/:post', function (req, res) {\n  var post = req.params.post;\n\n\n  _fs2.default.readFile('posts/' + post + '.md', 'utf8', function (error, data) {\n    if (error) return res.redirect('/');\n    res.send(head + converter.makeHtml(data));\n  });\n});\n\napp.get('/', function (req, res) {\n  return res.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbImFwcCIsImNvbnZlcnRlciIsInNob3dkb3duIiwiQ29udmVydGVyIiwiaGVhZCIsImZvb3RlciIsInVzZSIsImV4cHJlc3MiLCJzdGF0aWMiLCJzZXQiLCJnZXQiLCJyZXEiLCJyZXMiLCJwb3N0IiwicGFyYW1zIiwiZnMiLCJyZWFkRmlsZSIsImVycm9yIiwiZGF0YSIsInJlZGlyZWN0Iiwic2VuZCIsIm1ha2VIdG1sIiwic2VuZEZpbGUiLCJfX2Rpcm5hbWUiLCJsaXN0ZW5lciIsImxpc3RlbiIsInByb2Nlc3MiLCJlbnYiLCJQT1JUIiwiY29uc29sZSIsImxvZyIsImFkZHJlc3MiLCJwb3J0Il0sIm1hcHBpbmdzIjoiOztBQUFBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7QUFFQSxJQUFNQSxNQUFNLHdCQUFaO0FBQ0EsSUFBTUMsWUFBWSxJQUFJQyxtQkFBU0MsU0FBYixFQUFsQjs7QUFFQSxJQUFNQyxPQUFPLGlKQUFiO0FBQ0EsSUFBTUMsU0FBUyw4RkFBZjs7QUFFQUwsSUFBSU0sR0FBSixDQUFRQyxrQkFBUUMsTUFBUixDQUFlLFFBQWYsQ0FBUjtBQUNBUixJQUFJUyxHQUFKLENBQVEsT0FBUixFQUFpQixTQUFqQjs7QUFFQVQsSUFBSVUsR0FBSixDQUFRLFFBQVIsRUFBa0IsVUFBU0MsR0FBVCxFQUFjQyxHQUFkLEVBQW1CO0FBQUEsTUFDakJDLElBRGlCLEdBQ05GLEdBRE0sQ0FDM0JHLE1BRDJCLENBQ2pCRCxJQURpQjs7O0FBR25DRSxlQUFHQyxRQUFILFlBQXFCSCxJQUFyQixVQUFnQyxNQUFoQyxFQUF3QyxVQUFTSSxLQUFULEVBQWdCQyxJQUFoQixFQUFzQjtBQUM1RCxRQUFJRCxLQUFKLEVBQVcsT0FBT0wsSUFBSU8sUUFBSixDQUFhLEdBQWIsQ0FBUDtBQUNYUCxRQUFJUSxJQUFKLENBQVNoQixPQUFPSCxVQUFVb0IsUUFBVixDQUFtQkgsSUFBbkIsQ0FBaEI7QUFDRCxHQUhEO0FBSUQsQ0FQRDs7QUFTQWxCLElBQUlVLEdBQUosQ0FBUSxHQUFSLEVBQWEsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOO0FBQUEsU0FBY0EsSUFBSVUsUUFBSixDQUFhQyxZQUFZLG1CQUF6QixDQUFkO0FBQUEsQ0FBYjs7QUFHQSxJQUFNQyxXQUFXeEIsSUFBSXlCLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QixFQUE2QixZQUFXO0FBQ3ZEQyxVQUFRQyxHQUFSLENBQVksbUNBQW1DTixTQUFTTyxPQUFULEdBQW1CQyxJQUFsRTtBQUNELENBRmdCLENBQWpCIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlUm9vdCI6Ii9hcHAiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZnMgZnJvbSAnZnMnO1xuaW1wb3J0IGV4cHJlc3MgZnJvbSAnZXhwcmVzcyc7XG5pbXBvcnQgc2hvd2Rvd24gZnJvbSAnc2hvd2Rvd24nO1xuaW1wb3J0IHJlbmRlcmVyIGZyb20gJy4vc3JjL21vZHVsZXMvcmVuZGVyZXInO1xuXG5jb25zdCBhcHAgPSBleHByZXNzKCk7XG5jb25zdCBjb252ZXJ0ZXIgPSBuZXcgc2hvd2Rvd24uQ29udmVydGVyKCk7XG5cbmNvbnN0IGhlYWQgPSAnPGh0bWwgbGFuZz1cImVuXCI+PGhlYWQ+PHRpdGxlPk1hcmtkb3duIFdlYiBQYWdlPC90aXRsZT48L2hlYWQ+PGJvZHk+PGRpdiBjbGFzcz1cImdsaXRjaEJ1dHRvblwiIHN0eWxlPVwicG9zaXRpb246Zml4ZWQ7dG9wOjIwcHg7cmlnaHQ6MjBweDtcIj48L2Rpdj4nXG5jb25zdCBmb290ZXIgPSAnPHNjcmlwdCBzcmM9XCJodHRwczovL2J1dHRvbi5nbGl0Y2gubWUvYnV0dG9uLmpzXCIgZGF0YS1zdHlsZT1cImdsaXRjaFwiPjwvc2NyaXB0PjwvYm9keT48L2h0bWw+J1xuXG5hcHAudXNlKGV4cHJlc3Muc3RhdGljKCdwdWJsaWMnKSk7XG5hcHAuc2V0KCd2aWV3cycsICcuL3ZpZXdzJyk7XG5cbmFwcC5nZXQoJy86cG9zdCcsIGZ1bmN0aW9uKHJlcSwgcmVzKSB7XG4gIGNvbnN0IHsgcGFyYW1zOiB7IHBvc3QgfSB9ID0gcmVxO1xuICBcbiAgZnMucmVhZEZpbGUoYHBvc3RzLyR7cG9zdH0ubWRgLCAndXRmOCcsIGZ1bmN0aW9uKGVycm9yLCBkYXRhKSB7XG4gICAgaWYgKGVycm9yKSByZXR1cm4gcmVzLnJlZGlyZWN0KCcvJyk7XG4gICAgcmVzLnNlbmQoaGVhZCArIGNvbnZlcnRlci5tYWtlSHRtbChkYXRhKSk7XG4gIH0pXG59KTtcblxuYXBwLmdldCgnLycsIChyZXEsIHJlcykgPT4gcmVzLnNlbmRGaWxlKF9fZGlybmFtZSArICcvdmlld3MvaW5kZXguaHRtbCcpKTtcblxuXG5jb25zdCBsaXN0ZW5lciA9IGFwcC5saXN0ZW4ocHJvY2Vzcy5lbnYuUE9SVCwgZnVuY3Rpb24oKSB7XG4gIGNvbnNvbGUubG9nKCdZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAnICsgbGlzdGVuZXIuYWRkcmVzcygpLnBvcnQpO1xufSk7XG4iXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "app",
+        "converter",
+        "showdown",
+        "Converter",
+        "head",
+        "footer",
+        "use",
+        "express",
+        "static",
+        "set",
+        "get",
+        "req",
+        "res",
+        "post",
+        "params",
+        "fs",
+        "readFile",
+        "error",
+        "data",
+        "redirect",
+        "send",
+        "makeHtml",
+        "sendFile",
+        "__dirname",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "console",
+        "log",
+        "address",
+        "port"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;AACA;;;;;;AAEA,IAAMA,MAAM,wBAAZ;AACA,IAAMC,YAAY,IAAIC,mBAASC,SAAb,EAAlB;;AAEA,IAAMC,OAAO,iJAAb;AACA,IAAMC,SAAS,8FAAf;;AAEAL,IAAIM,GAAJ,CAAQC,kBAAQC,MAAR,CAAe,QAAf,CAAR;AACAR,IAAIS,GAAJ,CAAQ,OAAR,EAAiB,SAAjB;;AAEAT,IAAIU,GAAJ,CAAQ,QAAR,EAAkB,UAASC,GAAT,EAAcC,GAAd,EAAmB;AAAA,MACjBC,IADiB,GACNF,GADM,CAC3BG,MAD2B,CACjBD,IADiB;;;AAGnCE,eAAGC,QAAH,YAAqBH,IAArB,UAAgC,MAAhC,EAAwC,UAASI,KAAT,EAAgBC,IAAhB,EAAsB;AAC5D,QAAID,KAAJ,EAAW,OAAOL,IAAIO,QAAJ,CAAa,GAAb,CAAP;AACXP,QAAIQ,IAAJ,CAAShB,OAAOH,UAAUoB,QAAV,CAAmBH,IAAnB,CAAhB;AACD,GAHD;AAID,CAPD;;AASAlB,IAAIU,GAAJ,CAAQ,GAAR,EAAa,UAACC,GAAD,EAAMC,GAAN;AAAA,SAAcA,IAAIU,QAAJ,CAAaC,YAAY,mBAAzB,CAAd;AAAA,CAAb;;AAGA,IAAMC,WAAWxB,IAAIyB,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAW;AACvDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFgB,CAAjB",
+      "file": "index.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import fs from 'fs';\nimport express from 'express';\nimport showdown from 'showdown';\nimport renderer from './src/modules/renderer';\n\nconst app = express();\nconst converter = new showdown.Converter();\n\nconst head = '<html lang=\"en\"><head><title>Markdown Web Page</title></head><body><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div>'\nconst footer = '<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script></body></html>'\n\napp.use(express.static('public'));\napp.set('views', './views');\n\napp.get('/:post', function(req, res) {\n  const { params: { post } } = req;\n  \n  fs.readFile(`posts/${post}.md`, 'utf8', function(error, data) {\n    if (error) return res.redirect('/');\n    res.send(head + converter.makeHtml(data));\n  })\n});\n\napp.get('/', (req, res) => res.sendFile(__dirname + '/views/index.html'));\n\n\nconst listener = app.listen(process.env.PORT, function() {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n"
+      ]
+    },
+    "mtime": 1561466250000
+  },
+  "{\"filename\":\"/app/dist/index.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/dist\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/dist/index.js",
+      "filenameRelative": "/app/dist/index.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "index.js",
+      "sourceFileName": "index.js",
+      "sourceRoot": "/app/dist",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/dist",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "index"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _fs = require('fs');\n\nvar _fs2 = _interopRequireDefault(_fs);\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _showdown = require('showdown');\n\nvar _showdown2 = _interopRequireDefault(_showdown);\n\nfunction _interopRequireDefault(obj) {\n  return obj && obj.__esModule ? obj : { default: obj };\n}\n\nvar app = (0, _express2.default)();\nvar converter = new _showdown2.default.Converter();\n\nvar head = '<html lang=\"en\"><head><title>Markdown Web Page</title></head><body><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div>';\nvar footer = '<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script></body></html>';\n\napp.use(_express2.default.static('public'));\napp.set('views', './views');\n\napp.get('/:post', function (req, res) {\n  var post = req.params.post;\n\n  _fs2.default.readFile('posts/' + post + '.md', 'utf8', function (error, data) {\n    if (error) return res.redirect('/');\n    res.send(head + converter.makeHtml(data));\n  });\n});\n\napp.get('/', function (req, res) {\n  return res.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=index.js.map\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmpzIl0sIm5hbWVzIjpbIl9mcyIsInJlcXVpcmUiLCJfZnMyIiwiX2ludGVyb3BSZXF1aXJlRGVmYXVsdCIsIl9leHByZXNzIiwiX2V4cHJlc3MyIiwiX3Nob3dkb3duIiwiX3Nob3dkb3duMiIsIm9iaiIsIl9fZXNNb2R1bGUiLCJkZWZhdWx0IiwiYXBwIiwiY29udmVydGVyIiwiQ29udmVydGVyIiwiaGVhZCIsImZvb3RlciIsInVzZSIsInN0YXRpYyIsInNldCIsImdldCIsInJlcSIsInJlcyIsInBvc3QiLCJwYXJhbXMiLCJyZWFkRmlsZSIsImVycm9yIiwiZGF0YSIsInJlZGlyZWN0Iiwic2VuZCIsIm1ha2VIdG1sIiwic2VuZEZpbGUiLCJfX2Rpcm5hbWUiLCJsaXN0ZW5lciIsImxpc3RlbiIsInByb2Nlc3MiLCJlbnYiLCJQT1JUIiwiY29uc29sZSIsImxvZyIsImFkZHJlc3MiLCJwb3J0Il0sIm1hcHBpbmdzIjoiQUFBQTs7QUFFQSxJQUFJQSxNQUFNQyxRQUFRLElBQVIsQ0FBVjs7QUFFQSxJQUFJQyxPQUFPQyx1QkFBdUJILEdBQXZCLENBQVg7O0FBRUEsSUFBSUksV0FBV0gsUUFBUSxTQUFSLENBQWY7O0FBRUEsSUFBSUksWUFBWUYsdUJBQXVCQyxRQUF2QixDQUFoQjs7QUFFQSxJQUFJRSxZQUFZTCxRQUFRLFVBQVIsQ0FBaEI7O0FBRUEsSUFBSU0sYUFBYUosdUJBQXVCRyxTQUF2QixDQUFqQjs7QUFFQSxTQUFTSCxzQkFBVCxDQUFnQ0ssR0FBaEMsRUFBcUM7QUFBRSxTQUFPQSxPQUFPQSxJQUFJQyxVQUFYLEdBQXdCRCxHQUF4QixHQUE4QixFQUFFRSxTQUFTRixHQUFYLEVBQXJDO0FBQXdEOztBQUUvRixJQUFJRyxNQUFNLENBQUMsR0FBR04sVUFBVUssT0FBZCxHQUFWO0FBQ0EsSUFBSUUsWUFBWSxJQUFJTCxXQUFXRyxPQUFYLENBQW1CRyxTQUF2QixFQUFoQjs7QUFFQSxJQUFJQyxPQUFPLGlKQUFYO0FBQ0EsSUFBSUMsU0FBUyw4RkFBYjs7QUFFQUosSUFBSUssR0FBSixDQUFRWCxVQUFVSyxPQUFWLENBQWtCTyxNQUFsQixDQUF5QixRQUF6QixDQUFSO0FBQ0FOLElBQUlPLEdBQUosQ0FBUSxPQUFSLEVBQWlCLFNBQWpCOztBQUVBUCxJQUFJUSxHQUFKLENBQVEsUUFBUixFQUFrQixVQUFVQyxHQUFWLEVBQWVDLEdBQWYsRUFBb0I7QUFDcEMsTUFBSUMsT0FBT0YsSUFBSUcsTUFBSixDQUFXRCxJQUF0Qjs7QUFHQXBCLE9BQUtRLE9BQUwsQ0FBYWMsUUFBYixDQUFzQixXQUFXRixJQUFYLEdBQWtCLEtBQXhDLEVBQStDLE1BQS9DLEVBQXVELFVBQVVHLEtBQVYsRUFBaUJDLElBQWpCLEVBQXVCO0FBQzVFLFFBQUlELEtBQUosRUFBVyxPQUFPSixJQUFJTSxRQUFKLENBQWEsR0FBYixDQUFQO0FBQ1hOLFFBQUlPLElBQUosQ0FBU2QsT0FBT0YsVUFBVWlCLFFBQVYsQ0FBbUJILElBQW5CLENBQWhCO0FBQ0QsR0FIRDtBQUlELENBUkQ7O0FBVUFmLElBQUlRLEdBQUosQ0FBUSxHQUFSLEVBQWEsVUFBVUMsR0FBVixFQUFlQyxHQUFmLEVBQW9CO0FBQy9CLFNBQU9BLElBQUlTLFFBQUosQ0FBYUMsWUFBWSxtQkFBekIsQ0FBUDtBQUNELENBRkQ7O0FBSUEsSUFBSUMsV0FBV3JCLElBQUlzQixNQUFKLENBQVdDLFFBQVFDLEdBQVIsQ0FBWUMsSUFBdkIsRUFBNkIsWUFBWTtBQUN0REMsVUFBUUMsR0FBUixDQUFZLG1DQUFtQ04sU0FBU08sT0FBVCxHQUFtQkMsSUFBbEU7QUFDRCxDQUZjLENBQWY7QUFHQSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL2Rpc3QiLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5cbnZhciBfZnMgPSByZXF1aXJlKCdmcycpO1xuXG52YXIgX2ZzMiA9IF9pbnRlcm9wUmVxdWlyZURlZmF1bHQoX2ZzKTtcblxudmFyIF9leHByZXNzID0gcmVxdWlyZSgnZXhwcmVzcycpO1xuXG52YXIgX2V4cHJlc3MyID0gX2ludGVyb3BSZXF1aXJlRGVmYXVsdChfZXhwcmVzcyk7XG5cbnZhciBfc2hvd2Rvd24gPSByZXF1aXJlKCdzaG93ZG93bicpO1xuXG52YXIgX3Nob3dkb3duMiA9IF9pbnRlcm9wUmVxdWlyZURlZmF1bHQoX3Nob3dkb3duKTtcblxuZnVuY3Rpb24gX2ludGVyb3BSZXF1aXJlRGVmYXVsdChvYmopIHsgcmV0dXJuIG9iaiAmJiBvYmouX19lc01vZHVsZSA/IG9iaiA6IHsgZGVmYXVsdDogb2JqIH07IH1cblxudmFyIGFwcCA9ICgwLCBfZXhwcmVzczIuZGVmYXVsdCkoKTtcbnZhciBjb252ZXJ0ZXIgPSBuZXcgX3Nob3dkb3duMi5kZWZhdWx0LkNvbnZlcnRlcigpO1xuXG52YXIgaGVhZCA9ICc8aHRtbCBsYW5nPVwiZW5cIj48aGVhZD48dGl0bGU+TWFya2Rvd24gV2ViIFBhZ2U8L3RpdGxlPjwvaGVhZD48Ym9keT48ZGl2IGNsYXNzPVwiZ2xpdGNoQnV0dG9uXCIgc3R5bGU9XCJwb3NpdGlvbjpmaXhlZDt0b3A6MjBweDtyaWdodDoyMHB4O1wiPjwvZGl2Pic7XG52YXIgZm9vdGVyID0gJzxzY3JpcHQgc3JjPVwiaHR0cHM6Ly9idXR0b24uZ2xpdGNoLm1lL2J1dHRvbi5qc1wiIGRhdGEtc3R5bGU9XCJnbGl0Y2hcIj48L3NjcmlwdD48L2JvZHk+PC9odG1sPic7XG5cbmFwcC51c2UoX2V4cHJlc3MyLmRlZmF1bHQuc3RhdGljKCdwdWJsaWMnKSk7XG5hcHAuc2V0KCd2aWV3cycsICcuL3ZpZXdzJyk7XG5cbmFwcC5nZXQoJy86cG9zdCcsIGZ1bmN0aW9uIChyZXEsIHJlcykge1xuICB2YXIgcG9zdCA9IHJlcS5wYXJhbXMucG9zdDtcblxuXG4gIF9mczIuZGVmYXVsdC5yZWFkRmlsZSgncG9zdHMvJyArIHBvc3QgKyAnLm1kJywgJ3V0ZjgnLCBmdW5jdGlvbiAoZXJyb3IsIGRhdGEpIHtcbiAgICBpZiAoZXJyb3IpIHJldHVybiByZXMucmVkaXJlY3QoJy8nKTtcbiAgICByZXMuc2VuZChoZWFkICsgY29udmVydGVyLm1ha2VIdG1sKGRhdGEpKTtcbiAgfSk7XG59KTtcblxuYXBwLmdldCgnLycsIGZ1bmN0aW9uIChyZXEsIHJlcykge1xuICByZXR1cm4gcmVzLnNlbmRGaWxlKF9fZGlybmFtZSArICcvdmlld3MvaW5kZXguaHRtbCcpO1xufSk7XG5cbnZhciBsaXN0ZW5lciA9IGFwcC5saXN0ZW4ocHJvY2Vzcy5lbnYuUE9SVCwgZnVuY3Rpb24gKCkge1xuICBjb25zb2xlLmxvZygnWW91ciBhcHAgaXMgbGlzdGVuaW5nIG9uIHBvcnQgJyArIGxpc3RlbmVyLmFkZHJlc3MoKS5wb3J0KTtcbn0pO1xuLy8jIHNvdXJjZU1hcHBpbmdVUkw9aW5kZXguanMubWFwIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "index.js"
+      ],
+      "names": [
+        "_fs",
+        "require",
+        "_fs2",
+        "_interopRequireDefault",
+        "_express",
+        "_express2",
+        "_showdown",
+        "_showdown2",
+        "obj",
+        "__esModule",
+        "default",
+        "app",
+        "converter",
+        "Converter",
+        "head",
+        "footer",
+        "use",
+        "static",
+        "set",
+        "get",
+        "req",
+        "res",
+        "post",
+        "params",
+        "readFile",
+        "error",
+        "data",
+        "redirect",
+        "send",
+        "makeHtml",
+        "sendFile",
+        "__dirname",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "console",
+        "log",
+        "address",
+        "port"
+      ],
+      "mappings": "AAAA;;AAEA,IAAIA,MAAMC,QAAQ,IAAR,CAAV;;AAEA,IAAIC,OAAOC,uBAAuBH,GAAvB,CAAX;;AAEA,IAAII,WAAWH,QAAQ,SAAR,CAAf;;AAEA,IAAII,YAAYF,uBAAuBC,QAAvB,CAAhB;;AAEA,IAAIE,YAAYL,QAAQ,UAAR,CAAhB;;AAEA,IAAIM,aAAaJ,uBAAuBG,SAAvB,CAAjB;;AAEA,SAASH,sBAAT,CAAgCK,GAAhC,EAAqC;AAAE,SAAOA,OAAOA,IAAIC,UAAX,GAAwBD,GAAxB,GAA8B,EAAEE,SAASF,GAAX,EAArC;AAAwD;;AAE/F,IAAIG,MAAM,CAAC,GAAGN,UAAUK,OAAd,GAAV;AACA,IAAIE,YAAY,IAAIL,WAAWG,OAAX,CAAmBG,SAAvB,EAAhB;;AAEA,IAAIC,OAAO,iJAAX;AACA,IAAIC,SAAS,8FAAb;;AAEAJ,IAAIK,GAAJ,CAAQX,UAAUK,OAAV,CAAkBO,MAAlB,CAAyB,QAAzB,CAAR;AACAN,IAAIO,GAAJ,CAAQ,OAAR,EAAiB,SAAjB;;AAEAP,IAAIQ,GAAJ,CAAQ,QAAR,EAAkB,UAAUC,GAAV,EAAeC,GAAf,EAAoB;AACpC,MAAIC,OAAOF,IAAIG,MAAJ,CAAWD,IAAtB;;AAGApB,OAAKQ,OAAL,CAAac,QAAb,CAAsB,WAAWF,IAAX,GAAkB,KAAxC,EAA+C,MAA/C,EAAuD,UAAUG,KAAV,EAAiBC,IAAjB,EAAuB;AAC5E,QAAID,KAAJ,EAAW,OAAOJ,IAAIM,QAAJ,CAAa,GAAb,CAAP;AACXN,QAAIO,IAAJ,CAASd,OAAOF,UAAUiB,QAAV,CAAmBH,IAAnB,CAAhB;AACD,GAHD;AAID,CARD;;AAUAf,IAAIQ,GAAJ,CAAQ,GAAR,EAAa,UAAUC,GAAV,EAAeC,GAAf,EAAoB;AAC/B,SAAOA,IAAIS,QAAJ,CAAaC,YAAY,mBAAzB,CAAP;AACD,CAFD;;AAIA,IAAIC,WAAWrB,IAAIsB,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAY;AACtDC,UAAQC,GAAR,CAAY,mCAAmCN,SAASO,OAAT,GAAmBC,IAAlE;AACD,CAFc,CAAf;AAGA",
+      "file": "index.js",
+      "sourceRoot": "/app/dist",
+      "sourcesContent": [
+        "'use strict';\n\nvar _fs = require('fs');\n\nvar _fs2 = _interopRequireDefault(_fs);\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _showdown = require('showdown');\n\nvar _showdown2 = _interopRequireDefault(_showdown);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\nvar converter = new _showdown2.default.Converter();\n\nvar head = '<html lang=\"en\"><head><title>Markdown Web Page</title></head><body><div class=\"glitchButton\" style=\"position:fixed;top:20px;right:20px;\"></div>';\nvar footer = '<script src=\"https://button.glitch.me/button.js\" data-style=\"glitch\"></script></body></html>';\n\napp.use(_express2.default.static('public'));\napp.set('views', './views');\n\napp.get('/:post', function (req, res) {\n  var post = req.params.post;\n\n\n  _fs2.default.readFile('posts/' + post + '.md', 'utf8', function (error, data) {\n    if (error) return res.redirect('/');\n    res.send(head + converter.makeHtml(data));\n  });\n});\n\napp.get('/', function (req, res) {\n  return res.sendFile(__dirname + '/views/index.html');\n});\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=index.js.map"
+      ]
+    },
+    "mtime": 1561466020000
+  },
+  "{\"filename\":\"/app/src/modules/renderer.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],{\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}],[[],{\"spec\":false,\"loose\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/src/modules\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.3": {
+    "metadata": {
+      "usedHelpers": [],
+      "marked": [],
+      "modules": {
+        "imports": [],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/src/modules/renderer.js",
+      "filenameRelative": "/app/src/modules/renderer.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "spec": false,
+            "loose": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "renderer.js",
+      "sourceFileName": "renderer.js",
+      "sourceRoot": "/app/src/modules",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/src/modules",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "renderer"
+    },
+    "ignored": false,
+    "code": "\"use strict\";\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJyZW5kZXJlci5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL3NyYy9tb2R1bGVzIiwic291cmNlc0NvbnRlbnQiOltdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [],
+      "names": [],
+      "mappings": "",
+      "file": "renderer.js",
+      "sourceRoot": "/app/src/modules",
+      "sourcesContent": []
+    },
+    "mtime": 1561452960000
+  }
+}
