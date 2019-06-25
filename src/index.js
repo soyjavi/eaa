@@ -1,6 +1,6 @@
-const express = require('express');
-const fs = require('fs');
-const showdown = require('showdown');
+import fs from 'fs';
+import express from 'express';
+import showdown from 'showdown';
 
 const app = express();
 const converter = new showdown.Converter();

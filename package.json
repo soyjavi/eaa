@@ -2,16 +2,19 @@
   "name": "el-anarquista-financiero",
   "version": "0.0.1",
   "description": "A simple Node app built on Express, instantly up and running.",
-  "main": "server.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node server.js"
+    "build-babel": "babel -d ./dist ./src -s",
+    "start": "npm run build-babel && node ./dist/index.js"
   },
   "dependencies": {
-    "express": "^4.16.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-cli": "^6.26.0",
+    "express": "^4.16.3",
     "showdown": "^1.7.1"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/elanarquistafinanciero"
