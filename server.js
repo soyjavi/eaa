@@ -3,6 +3,9 @@
 
 // init project
 const express = require('express');
+const fs = require('fs');
+const showdown = require('showdown');
+
 const app = express();
 
 // we've started you off with Express, 
@@ -16,7 +19,7 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-// listen for requests :)
+// listen for requests :)r
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
 });
