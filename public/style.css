@@ -1,7 +1,15 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+/*   margin: 0;
+  padding: 0; */
+}
+
+a { 
+  color: black;
+}
+
+a:hover {
+  color: blue;
 }
 
 body {
@@ -12,6 +20,8 @@ body {
 
 header {
   background: yellow;  
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 3.2rem;
 }
 
@@ -40,4 +50,9 @@ main h1 {
 
 footer {
   margin-top: 3.2rem;
+  text-align: center;
+}
+
+footer a {
+  
 }
