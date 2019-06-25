@@ -17,7 +17,7 @@ app.get('/:post', function(req, res) {
   
   fs.readFile(`posts/${post}.md`, 'utf8', function(error, data) {
     if (error) return res.redirect('/');
-    res.send(head + converter.makeHtml(data) + footer);
+    res.send(head + converter.makeHtml(data));
   })
 });
 
