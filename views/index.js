@@ -5,7 +5,8 @@ const folder = path.resolve('.', 'views');
 
 export default (filename = 'index', values = {}) => {
   const { renderer: { views } } = global;
-  let view = views[filename];
+  // let view = views[filename];
+  let view;
 
   if (!view) {
     const uriFile = `${folder}/${filename}.html`;
