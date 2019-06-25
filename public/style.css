@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 header h1 strong {
@@ -37,12 +37,12 @@ header h1 strong {
 header h1 .cursor {
   animation: blinker 1s linear infinite;
   background: black;
-  bottom: -0.2rem;
+  bottom: -0.3rem;
   display: inline-block;
-  height: 1.2rem;
+  height: 1.5rem;
   margin-left: 0.4rem;
   position: relative;
-  width: 0.4rem;
+  width: 0.2rem;
 }
 
 @keyframes blinker {
