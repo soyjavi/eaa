@@ -1,14 +1,16 @@
 import fs from 'fs';
+import path from 'path';
 
-export default (file = 'index', values = {}) => {
-  const view = fs.readFileSync(`${file}.html`, 'utf8');
+const folder = path.resolve('.', 'views');
+
+export default (filename = 'index', values = {}) => {
+  const uriFile = `${folder}/${filename}.html`;
+  const { rendered: { views: {} } = global;
   
-  Object.keys(values).forEach(key => view.replate(`{{${key}}}`, values[key]));
+  if (!fs.existsSync(uriFile)) throw new Error(`${filename} could not read correctly.`);
+  let view = fs.readFileSync(uriFile, 'utf8');
   
-  // fs.readFile(`${template}.html`, 'utf8', function(error, data) {
-  //   if (error) throw Error('Not exists');
-  //   res.send(head + converter.makeHtml(data));
-  // });
+  Object.keys(values).forEach(key => view = view.replace(`{{${key}}}`, values[key]));
   
   return view;
 }

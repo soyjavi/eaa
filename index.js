@@ -7,8 +7,7 @@ import view from './views';
 const app = express();
 const converter = new showdown.Converter();
 
-const head = '<html lang="en"><head><title>Markdown Web Page</title></head><body><div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>'
-const footer = '<script src="https://button.glitch.me/button.js" data-style="glitch"></script></body></html>'
+global.renderer = { post: {}, views: {} };
 
 app.use(express.static('public'));
 app.set('views', './views');
@@ -22,8 +21,9 @@ app.get('/:post', function(req, res) {
   })
 });
 
-app.get('/', (req, res) => res.sendFile(__dirname + '/views/index.html'));
+// app.get('/', (req, res) => res.sendFile(__dirname + '/views/index.html'));
 
+app.get('/', (req, res) => res.send(view('index', { content: 'hola' })));
 
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);
