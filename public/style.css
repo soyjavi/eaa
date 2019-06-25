@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-/*   margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 a { 
@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 header small {
   display: block;
@@ -37,10 +37,24 @@ header small {
 main {
   max-width: 640px;
   margin: 0 auto;
+  line-height: 1.25em;
 }
 
 main h1 {
   font-size: 32px;
+}
+
+main {
+  text-align: justify;
+}
+
+main blockquote {
+  margin: 1.6rem 0;
+}
+
+main blockquote em {
+  display: block;
+  text-align: right;
 }
 
 .bold, strong, b {
