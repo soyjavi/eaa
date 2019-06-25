@@ -19,7 +19,6 @@ body {
 }
 
 header {
-  background: yellow;  
   display: flex;
   justify-content: space-between;
   margin-bottom: 3.2rem;
@@ -28,6 +27,28 @@ header {
 header h1 {
   font-size: 1.5rem;
 }
+
+header h1 strong {
+  background: black;
+  color: white;
+  padding: 0 0.2rem;
+}
+
+header h1 .cursor {
+  animation: blinker 1s linear infinite;
+  background: black;
+  bottom: -0.2rem;
+  display: inline-block;
+  height: 1.2rem;
+  margin-left: 0.4rem;
+  position: relative;
+  width: 0.4rem;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
 header small {
   display: block;
   font-size: 0.9rem;
@@ -52,9 +73,9 @@ main blockquote {
   margin: 1.6rem 0;
 }
 
-main blockquote em {
+main blockquote p em {
+  margin-top: 0.4rem;
   display: block;
-  text-align: right;
 }
 
 .bold, strong, b {
