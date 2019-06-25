@@ -21,7 +21,8 @@ app.get('/:post', function(req, res) {
   })
 });
 
-app.get('/', (req, res) => res.send(view('index', { content: 'hola' })));
+// app.get('/', (req, res) => res.send(view('index', { content: 'hola' })));
+app.get('/', (req, res) => res.redirect('/welcome'));
 
 const listener = app.listen(process.env.PORT, function() {
   console.log('Your app is listening on port ' + listener.address().port);

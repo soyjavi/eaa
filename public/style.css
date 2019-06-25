@@ -1,40 +1,43 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'VT323', 'Inconsolata', monospace;
-  font-size: 1rem;
-  margin: 2em;
+  font-size: 20px;
+  margin: 1.6rem;
 }
 
 header {
-  
+  background: yellow;  
+  margin-bottom: 3.2rem;
 }
+
 header h1 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1.6rem;
 }
 header small {
-  font-size: 8px;
+  display: block;
+  font-size: 0.9rem;
+  max-width: 240px;
 }
 
-h1 {}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+}
 
-.bold {
+main h1 {
+  font-size: 32px;
+}
+
+.bold, strong, b {
   font-weight: bold;
 }
 
-p {
-  max-width: 600px;
-}
-
-li {
-  margin-bottom: 5px;
-}
 
 footer {
-  margin-top: 50px;
-  padding-top: 25px;
-  border-top: 1px solid lightgrey;
+  margin-top: 3.2rem;
 }
