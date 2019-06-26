@@ -1,7 +1,7 @@
 {
   "name": "el-anarquista-financiero",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "version": "0.0.2",
+  "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "main": "dist/index.js",
   "scripts": {
     "build-babel": "babel -d ./dist ./src -s",
@@ -20,9 +20,5 @@
     "url": "https://glitch.com/edit/#!/elanarquistafinanciero"
   },
   "license": "MIT",
-  "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+  "keywords": []
 }

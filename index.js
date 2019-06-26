@@ -10,16 +10,20 @@ const converter = new showdown.Converter();
 global.renderer = { post: {}, views: {} };
 
 app.use(express.static('public'));
-app.set('views', './views');
+
+// Endpoints
+app.get('/error', (req, res) => res.send(render('index')));
+
+app.get('/dashboard', (req, res) => res.json({ endpoint: 'dashboard' }));
 
 app.get('/:postUri', function(req, res) {
   const { params: { postUri } } = req;
   const post = posts.find(({ uri }) => uri === postUri);
   
-  if (!post) res.send(`Post ${postUri} doesnt exist`);
+  if (!post) res.redirect('/error');
   
   fs.readFile(`posts/${post.uri}.md`, 'utf8', function(error, markdown) {
-    if (error) return res.redirect('/');
+    if (error) return res.redirect('/error');
     res.send(render('index', { 
       main: render('post', {
         // ...post, @TODO: Babel config
