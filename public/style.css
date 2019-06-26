@@ -81,7 +81,7 @@ header h1 strong {
 }
 
 header h1 .cursor {
-  animation: blinker 500ms linear infinite;
+  animation: blinker 1s linear infinite;
   background: var(--color);
   bottom: -0.3rem;
   display: inline-block;
