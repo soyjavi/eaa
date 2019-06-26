@@ -4,10 +4,10 @@
   --color-secondary: #444;
   --color-hover: blue;
   
-  --font-size-XL: 3.2rem;
+  --font-size-XL: 3rem;
   --font-size-L: 2.4rem;
   --font-size: 1.6rem;
-  --font-size-S: 1.2rem;
+  --font-size-S: 1.1rem;
   --font-size-XS: 0.9rem;
   
   --unit: 1rem;
@@ -85,37 +85,37 @@ header small {
 main {
   max-width: 640px;
   margin: 0 auto;
-  line-height: 150%;
   text-align: justify;
 }
 
 main h1 {
   font-size: var(--font-size-XL);
   text-align: center;
+  padding: var(--unit);
   margin-bottom: var(--unit);
-  border-bottom: 1px solid;
-  background-color: rgba(255, 0, 0, 0.5);
-  
+  border-bottom: 1px solid var(--color-secondary);
 }
 
 main h2, main h3 {
-  margin: var(--unit) 0;
-  background-color: rgba(255, 0, 0, 0.5);  
+  margin: calc(var(--unit) * 2) 0 var(--unit) 0;
 }
 
 main blockquote {
-/*   margin: 1.6rem 0; */
-  background-color: rgba(0, 255, 0, 0.5);  
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-secondary);
+  padding: var(--unit);
+  margin-bottom: var(--unit);  
 }
 
-main blockquote p em {
-  margin-top: 0.4rem;
+main blockquote p strong {
   display: block;
+  font-size: var(--font-size-S);
+  margin-top: calc(var(--unit) * 1);
 }
 
 main > p {
-  background-color: rgba(0, 255, 255, 0.5);
   margin-bottom: var(--unit);
+/*   line-height: 150%;   */
 }
 
 footer {
