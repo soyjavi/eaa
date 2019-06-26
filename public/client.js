@@ -2,7 +2,7 @@ const eaa = {
   events: {
     theme: () => {
       const root = document.documentElement;
-      let bg = 'black';
+      let bg = '#111';
       let color = 'white';
       
       if (root.style.getPropertyValue('--bg-color') === bg) {
@@ -11,7 +11,7 @@ const eaa = {
       }
       
       root.style.setProperty('--bg-color', bg);
-      root.style.setProperty('--bg-color-opacity', bg);
+      root.style.setProperty('--bg-opacity', bg);
       root.style.setProperty('--color', color);
     }
   },

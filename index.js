@@ -1,8 +1,8 @@
 import fs from 'fs';
 import express from 'express';
 import showdown from 'showdown';
-import renderer from './src/modules/renderer';
 import view from './views';
+import posts from './store/posts.json';
 
 const app = express();
 const converter = new showdown.Converter();
