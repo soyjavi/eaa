@@ -1,5 +1,3 @@
-# welcome to el anarquista financiero
-
 Lorem `code` and **strong** and *italic* ... Sint sed aut ea dolores explicabo. Ut sed velit nemo quia quia libero. Eveniet corporis ipsum qui ut maiores repellendus. Corrupti molestiae explicabo quod aut atque a dolores. Optio asperiores repudiandae debitis.
 
   > “Si estamos, como parece, en pleno proceso de convertirnos en una sociedad totalitaria donde el aparato de Estado es todopoderoso, entonces el código moral imprescindible para la supervivencia del individuo libre y verdadero será engañar, mentir, ocultar, aparentar, escapar, falsificar documentos, construir aparatos electrónicos en tu garaje capaces de superar los gadgets de las autoridades. Si la pantalla de tu televisor te vigila, invierte los cables por la noche, cuando te permitan tenerlo apagado. Y hazlo de manera que el perro policía que vigilaba la transmisión de tu casa acabe mirando el contenido de su propio salón».

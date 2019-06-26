@@ -20,7 +20,13 @@ app.get('/:postUri', function(req, res) {
   
   fs.readFile(`posts/${post.uri}.md`, 'utf8', function(error, markdown) {
     if (error) return res.redirect('/');
-    res.send(view('index', { content: converter.makeHtml(data) }));
+    res.send(view('index', { 
+      main: view('post', { 
+        title: post.title,
+        
+        markdown: converter.makeHtml(markdown) 
+      }), 
+    }));
   })
 });
 

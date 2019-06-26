@@ -47,6 +47,10 @@ button:hover, .button:hover {
   color: var(--color);
 }
 
+img {
+  background-color: var(--color-secondary);
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--color);
@@ -144,6 +148,19 @@ main > p {
 main img {
   display: block;
   width: 100%;
+}
+
+main .author {
+  display: flex;
+  align-items: center;
+  background-color: red;
+}
+
+main .author img {
+  border-radius: 50%;
+  height: calc(var(--unit) * 2);
+  margin-right: var(--unit);
+  width: calc(var(--unit) * 2);
 }
 
 #button-theme {
