@@ -16,6 +16,8 @@ app.get('/error', (req, res) => res.send(render('index')));
 
 app.get('/dashboard', (req, res) => res.json({ endpoint: 'dashboard' }));
 
+app.get('/signin', (req, res) => res.json({ endpoint: 'signin' }));
+
 app.get('/:postUri', function(req, res) {
   const { params: { postUri } } = req;
   const post = posts.find(({ uri }) => uri === postUri);

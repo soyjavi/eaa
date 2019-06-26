@@ -21,13 +21,9 @@
   padding: 0;
 }
 
-a { 
-  color: var(--color);
-}
-
-a:hover {
-  color: var(--color-hover);
-}
+a {  color: var(--color); }
+a:hover { color: var(--color-hover); }
+a.clean { text-decoration: none; }
 
 small {
   color: var(--color-secondary);
