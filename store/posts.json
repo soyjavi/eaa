@@ -2,10 +2,10 @@
   {
     "uri": "welcome",
     "active": true,
-    "date": "2019",
+    "date": "2019/06/23",
     "title": "Bienvenidos al mundo bla bla",
     "author": "Tyler durden",
-    "avatar": "http://"
+    "avatar": "https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/61e68204-ad8c-44e4-8481-23b1566ed7bb-small.jpg"
   },
   {
     "uri": "byebye",

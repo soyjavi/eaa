@@ -21,9 +21,11 @@ app.get('/:postUri', function(req, res) {
   fs.readFile(`posts/${post.uri}.md`, 'utf8', function(error, markdown) {
     if (error) return res.redirect('/');
     res.send(view('index', { 
-      main: view('post', { 
+      main: view('post', {         
         title: post.title,
-        
+        date: post.date,
+        author: post.author,
+        avatar: post.avatar,        
         markdown: converter.makeHtml(markdown) 
       }), 
     }));
