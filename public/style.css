@@ -1,6 +1,6 @@
 :root {
   --bg-color: white;
-  --bg-opacity: rgba(255,255,255,0.5);
+  --bg-opacity: rgba(255,255,255,0.85);
   --color: #222;
   --color-secondary: #444;
   --color-hover: blue;
@@ -39,19 +39,23 @@ button {
 }
 
 body {
-  font-size: 20px;
   background-color: var(--bg-color);
   color: var(--color);
-  margin: 1.6rem;
+  font-size: 20px;
+  margin: calc(var(--unit) * 1.2);
 }
 
 header {
   display: flex;
+  align-self: center;
   justify-content: space-between;
-  padding: calc(var(--unit) * 1);
+  padding: calc(var(--unit) * 1) 0;
   position: fixed;
+  top: 0;
   width: 100%;
-  background: red;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: var(--bg-opacity);
 }
 
 header h1 {
@@ -87,6 +91,7 @@ header small {
 }
 
 main {
+  padding-top: var();
   max-width: 640px;
   margin: 0 auto;
   text-align: justify;
@@ -107,8 +112,8 @@ main h2, main h3 {
 main blockquote {
   background-color: rgba(0, 0, 0, 0.05);
   color: var(--color-secondary);
-  padding: var(--unit);
   margin-bottom: var(--unit);  
+  padding: var(--unit);
 }
 
 main blockquote p strong {
