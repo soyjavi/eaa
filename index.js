@@ -2,7 +2,6 @@ import fs from 'fs';
 import express from 'express';
 import showdown from 'showdown';
 import render from './src/modules/render';
-import view from './views';
 import posts from './store/posts.json';
 
 const app = express();
