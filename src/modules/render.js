@@ -16,7 +16,7 @@ export default (filename = 'index', values = {}) => {
     views[filename] = view;
   }
   
-  Object.keys(values).forEach(key => view = view.replace(`{{${key}}}`, values[key]));
+  Object.keys(values).forEach(key => view = view.replace(new RegExp(`{{${key}}}`, 'g'), values[key]));
   
   return view;
 }

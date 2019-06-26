@@ -156,13 +156,18 @@ main img {
 main .author {
   display: flex;
   align-items: center;
+  line-height: 100%;
 }
 
 main .author img {
   border-radius: 50%;
-  height: calc(var(--unit) * 2);
+  height: calc(var(--unit) * 2.2);
   margin-right: calc(var(--unit) / 2);
-  width: calc(var(--unit) * 2);
+  width: calc(var(--unit) * 2.2);
+}
+
+main .author strong {
+  display: block;
 }
 
 #button-theme {

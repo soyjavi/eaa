@@ -1,6 +1,7 @@
 import fs from 'fs';
 import express from 'express';
 import showdown from 'showdown';
+import render from './src/modules/render';
 import view from './views';
 import posts from './store/posts.json';
 
@@ -20,8 +21,9 @@ app.get('/:postUri', function(req, res) {
   
   fs.readFile(`posts/${post.uri}.md`, 'utf8', function(error, markdown) {
     if (error) return res.redirect('/');
-    res.send(view('index', { 
-      main: view('post', {         
+    res.send(render('index', { 
+      main: render('post', {
+        // ...post, @TODO: Babel config
         title: post.title,
         date: post.date,
         author: post.author,
@@ -32,7 +34,7 @@ app.get('/:postUri', function(req, res) {
   })
 });
 
-// app.get('/', (req, res) => res.send(view('index', { content: 'hola' })));
+// app.get('/', (req, res) => res.send(render('index', { content: 'hola' })));
 app.get('/', (req, res) => res.redirect('/welcome'));
 
 const listener = app.listen(process.env.PORT, function() {
