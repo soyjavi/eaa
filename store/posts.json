@@ -1,7 +1,18 @@
 [
   {
-    'file': 'welcome',
-    title: 'Bienvenidos al mundo bla bla',
-    
+    "uri": "welcome",
+    "active": true,
+    "date": "2019",
+    "title": "Bienvenidos al mundo bla bla",
+    "author": "Tyler durden",
+    "avatar": "http://"
+  },
+  {
+    "uri": "byebye",
+    "active": true,
+    "date": "2019",
+    "title": "Bienvenidos al mundo bla bla",
+    "author": "Tyler durden",
+    "avatar": "http://"
   }
 ]

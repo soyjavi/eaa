@@ -12,10 +12,13 @@ global.renderer = { post: {}, views: {} };
 app.use(express.static('public'));
 app.set('views', './views');
 
-app.get('/:post', function(req, res) {
-  const { params: { post } } = req;
+app.get('/:postUri', function(req, res) {
+  const { params: { postUri } } = req;
+  const post = posts.find(({ uri }) => uri === postUri);
   
-  fs.readFile(`posts/${post}.md`, 'utf8', function(error, data) {
+  if (!post) res.send(`Post ${postUri} doesnt exist`);
+  
+  fs.readFile(`posts/${post.uri}.md`, 'utf8', function(error, markdown) {
     if (error) return res.redirect('/');
     res.send(view('index', { content: converter.makeHtml(data) }));
   })
