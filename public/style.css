@@ -38,6 +38,7 @@ button, .button {
   font-size: var(--font-size-S);
   padding: calc(var(--unit) / 2);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 button:hover, .button:hover {
@@ -142,6 +143,12 @@ main > p {
 main img {
   display: block;
   width: 100%;
+}
+
+.button-theme {
+  position: fixed;
+  bottom: var(--unit);
+  left: var(--unit);
 }
 
 footer {
