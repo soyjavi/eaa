@@ -9,6 +9,8 @@
   --font-size: 1.6rem;
   --font-size-S: 1.2rem;
   --font-size-XS: 0.9rem;
+  
+  --unit: 1rem;
 }
 
 * {
@@ -83,20 +85,27 @@ header small {
 main {
   max-width: 640px;
   margin: 0 auto;
-  line-height: 1.25em;
+  line-height: 150%;
+  text-align: justify;
 }
 
 main h1 {
   font-size: var(--font-size-XL);
   text-align: center;
+  margin-bottom: var(--unit);
+  border-bottom: 1px solid;
+  background-color: rgba(255, 0, 0, 0.5);
+  
 }
 
-main {
-  text-align: justify;
+main h2, main h3 {
+  margin: var(--unit) 0;
+  background-color: rgba(255, 0, 0, 0.5);  
 }
 
 main blockquote {
-  margin: 1.6rem 0;
+/*   margin: 1.6rem 0; */
+  background-color: rgba(0, 255, 0, 0.5);  
 }
 
 main blockquote p em {
@@ -104,10 +113,10 @@ main blockquote p em {
   display: block;
 }
 
-.bold, strong, b {
-  font-weight: bold;
+main > p {
+  background-color: rgba(0, 255, 255, 0.5);
+  margin-bottom: var(--unit);
 }
-
 
 footer {
   margin-top: 3.2rem;
