@@ -1,11 +1,19 @@
 :root {
   --bg-color: white;
-  --color: #222222;
+  --color: #222;
+  --color-secondary: #444;
   --color-hover: blue;
+  
+  --font-size-XL: 3.2rem;
+  --font-size-L: 2.4rem;
+  --font-size: 1.6rem;
+  --font-size-S: 1.2rem;
+  --font-size-XS: 0.9rem;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'VT323', monospace;
   margin: 0;
   padding: 0;
 }
@@ -18,8 +26,16 @@ a:hover {
   color: var(--color-hover);
 }
 
+button {
+  background-color: var(--color);
+  border: none;
+  color: var(--bg-color);
+  font-weight: bold;
+  font-size: var(--font-size-S);
+  padding: 0.4rem 0.6rem;
+}
+
 body {
-  font-family: 'VT323', 'Inconsolata', monospace;
   font-size: 20px;
   background-color: var(--bg-color);
   color: var(--color);
@@ -33,13 +49,12 @@ header {
 }
 
 header h1 {
-  font-size: 1.6rem;
+  font-size: var(--font-size);
 }
 
 header h1 strong {
   background: var(--color);
   color: var(--bg-color);
-  height: 1.6rem;
   padding: 0 0.2rem;
 }
 
@@ -48,8 +63,8 @@ header h1 .cursor {
   background: var(--color);
   bottom: -0.3rem;
   display: inline-block;
-  height: 1.6rem;
-/*   margin-left: 0.4rem; */
+  height: 1.55rem;
+  margin-left: 0.4rem;
   position: relative;
   width: 0.2rem;
 }
@@ -60,8 +75,9 @@ header h1 .cursor {
 
 header small {
   display: block;
-  font-size: 0.9rem;
   max-width: 240px;
+  color: var(--color-secondary);
+  font-size: var(--font-size-XS);
 }
 
 main {
@@ -71,7 +87,8 @@ main {
 }
 
 main h1 {
-  font-size: 32px;
+  font-size: var(--font-size-XL);
+  text-align: center;
 }
 
 main {
@@ -95,8 +112,5 @@ main blockquote p em {
 footer {
   margin-top: 3.2rem;
   text-align: center;
-}
-
-footer a {
-  
+  color: var(--color-secondary);
 }
