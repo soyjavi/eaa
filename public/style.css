@@ -29,13 +29,20 @@ a:hover {
   color: var(--color-hover);
 }
 
-button {
+button, .button {
   background-color: var(--color);
-  border: none;
+  border: 1px solid var(--color);
   color: var(--bg-color);
+  cursor: pointer;
   font-weight: bold;
   font-size: var(--font-size-S);
   padding: 0.4rem 0.6rem;
+  text-transform: uppercase;
+}
+
+button:hover, .button:hover {
+  background-color: var(--bg-color);
+  color: var(--color);
 }
 
 body {
@@ -46,16 +53,21 @@ body {
 }
 
 header {
-  display: flex;
-  align-self: center;
-  justify-content: space-between;
-  padding: calc(var(--unit) * 1) 0;
+  background: var(--bg-opacity);
+  padding: calc(var(--unit) * 1.2);
   position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
   width: 100%;
-  max-width: 1024px;
+}
+
+header .wrapper {
+  display: flex;
   margin: 0 auto;
-  background: var(--bg-opacity);
+  justify-content: space-between;
+  max-width: 1280px;
+  align-items: flex-start;
 }
 
 header h1 {
@@ -91,7 +103,7 @@ header small {
 }
 
 main {
-  padding-top: var();
+  padding-top: calc(var(--unit) * 4.8);
   max-width: 640px;
   margin: 0 auto;
   text-align: justify;
