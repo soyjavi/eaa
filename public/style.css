@@ -2,7 +2,7 @@
   --bg-color: white;
   --bg-opacity: rgba(255,255,255,0.85);
   --color: #222;
-  --color-secondary: #444;
+  --color-secondary: #666;
   --color-hover: blue;
   
   --font-size-XL: 3rem;
@@ -36,7 +36,7 @@ button, .button {
   cursor: pointer;
   font-weight: bold;
   font-size: var(--font-size-S);
-  padding: 0.4rem 0.6rem;
+  padding: calc(var(--unit) / 2);
   text-transform: uppercase;
 }
 
@@ -81,14 +81,14 @@ header h1 strong {
 }
 
 header h1 .cursor {
-  animation: blinker 1s linear infinite;
+  animation: blinker 500ms linear infinite;
   background: var(--color);
   bottom: -0.3rem;
   display: inline-block;
   height: 1.55rem;
-  margin-left: 0.4rem;
+  margin-left: calc(var(--unit) / 2);
   position: relative;
-  width: 0.2rem;
+  width: calc(var(--unit) / 8);
 }
 
 @keyframes blinker {
@@ -103,7 +103,7 @@ header small {
 }
 
 main {
-  padding-top: calc(var(--unit) * 4.8);
+  padding-top: calc(var(--unit) * 5);
   max-width: 640px;
   margin: 0 auto;
   text-align: justify;
@@ -137,6 +137,11 @@ main blockquote p strong {
 main > p {
   margin-bottom: var(--unit);
   line-height: 125%;  
+}
+
+main img {
+  display: block;
+  width: 100%;
 }
 
 footer {
