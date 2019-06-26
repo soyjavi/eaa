@@ -1,3 +1,9 @@
+:root {
+  --bg-color: white;
+  --color: #222222;
+  --color-hover: blue;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,16 +11,18 @@
 }
 
 a { 
-  color: black;
+  color: var(--color);
 }
 
 a:hover {
-  color: blue;
+  color: var(--color-hover);
 }
 
 body {
   font-family: 'VT323', 'Inconsolata', monospace;
   font-size: 20px;
+  background-color: var(--bg-color);
+  color: var(--color);
   margin: 1.6rem;
 }
 
@@ -29,18 +37,19 @@ header h1 {
 }
 
 header h1 strong {
-  background: black;
-  color: white;
+  background: var(--color);
+  color: var(--bg-color);
+  height: 1.6rem;
   padding: 0 0.2rem;
 }
 
 header h1 .cursor {
   animation: blinker 1s linear infinite;
-  background: black;
+  background: var(--color);
   bottom: -0.3rem;
   display: inline-block;
-  height: 1.5rem;
-  margin-left: 0.4rem;
+  height: 1.6rem;
+/*   margin-left: 0.4rem; */
   position: relative;
   width: 0.2rem;
 }
