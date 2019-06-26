@@ -24,6 +24,7 @@
 a {  color: var(--color); }
 a:hover { color: var(--color-hover); }
 a.clean { text-decoration: none; }
+a.clean:hover { color: var(--color); }
 
 small {
   color: var(--color-secondary);
