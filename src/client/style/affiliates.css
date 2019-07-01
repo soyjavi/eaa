@@ -1,0 +1,30 @@
+[data-role="affiliates"] {
+
+}
+
+[data-role="affiliates"] section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: calc(var(--unit) * 1) 0;
+}
+
+[data-role="affiliates"] section a {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: var(--unit) 0;
+  text-decoration: none;
+  text-align: center;
+  width: 22.5%;
+}
+
+[data-role="affiliates"] section img {
+  display: block;
+  height: 192px;
+  width: 100%;
+}
+
+[data-role="affiliates"] section h3 {
+  margin-top: calc(var(--unit) / 2);
+}

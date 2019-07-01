@@ -4,15 +4,25 @@
     "active": true,
     "date": "2019/06/23",
     "title": "Bienvenidos al mundo bla bla",
+    "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "author": "tyler",
-    "avatar": "https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/61e68204-ad8c-44e4-8481-23b1566ed7bb-small.jpg"
+    "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
+    "image": "http://via.placeholder.com/1920x1080?text=placeholder"
   },
   {
     "uri": "que-es-el-dinero",
     "active": true,
     "date": "2019",
     "title": "what is money?",
-    "author": "Tyler durden",
-    "avatar": "https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/user-avatar/61e68204-ad8c-44e4-8481-23b1566ed7bb-small.jpg"
+    "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "author": "luigi"
+  },
+  {
+    "uri": "que-es-el-dinero",
+    "active": true,
+    "date": "2019",
+    "title": "what is money?",
+    "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "author": "luigi"
   }
 ]

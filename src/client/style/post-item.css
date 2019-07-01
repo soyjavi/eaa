@@ -1,0 +1,23 @@
+[data-role="post-item"] {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: calc(var(--unit) * 2) 0;
+}
+  [data-role="post-item"] .info {
+    flex: 1;
+    margin-right: var(--unit);
+  }
+    [data-role="post-item"] .info p {
+      font-size: var(--font-size-S);
+      margin-bottom: var(--unit);
+    }
+
+  [data-role="post-item"] .img {
+    height: 100%;
+    min-height: 108px;
+    width: 136px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

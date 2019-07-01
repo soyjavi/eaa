@@ -1,0 +1,10 @@
+#button-theme {
+  position: fixed;
+  bottom: var(--unit);
+  left: var(--unit);
+}
+
+footer {
+  margin-top: calc(var(--unit) * 4);
+  text-align: center;
+}

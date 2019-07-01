@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>El Anarquista Financiero</title>
-    <meta name="description" content="on a long enough timeline the survival rate for everyone drops to zero.">
-    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <link id="favicon" rel="icon" href="{{FAVICON}}" type="image/x-icon">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-    <script src="/client.js" defer></script>
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Fira+Sans:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="/index.js" defer></script>
   </head>
   <body>
     <header>
       <div class="wrapper">
         <div>
           <a href="/" class="clean">
-            <h1>activista <strong>financiero</strong><span class="cursor"></span></h1>
+            <h1>el activista <strong>financiero</strong><span class="cursor"></span></h1>
           </a>
-          <small>on a long enough timeline the survival rate for everyone drops to zero.</small>  
+          <small class="font-content">
+            on a long enough timeline the survival rate for everyone drops to zero.
+          </small>
         </div>
         <div>
           <a class="button" href="/signin">REGISTRATE</a>
         </div>
       </div>
     </header>
-    
-    <main class="{{type}}">
+
+    <main data-role="{{role}}">
       {{main}}
     </main>
-    
-    <button id="button-theme" onclick="eaa.events.theme()">🌗</button>
+
+    <button id="button-theme" onclick="eaf.events.theme()">🌗</button>
 
     <footer>
       <p>
-        <a href="">Discrimination Notice</a> * <a href="">Cookie Policy</a>
+        <a href="/discrimination">Discrimination Notice</a> * <a href="/cookies">Cookie Policy</a> * <a href="/afiliados">Afiliados</a>
       </p>
-      <small>
-        Copyright ©2019 elanarquistafinanciero.com/SatoshiLabs, LTD.
+      <small class="font-content">
+        Copyright ©2019 {{DOMAIN}}/Soshilabs, LTD.
       </small>
     </footer>
   </body>

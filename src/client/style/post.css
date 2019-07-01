@@ -1,0 +1,58 @@
+[data-role="post"] {
+  max-width: var(--wrapper-post);
+  text-align: justify;
+}
+
+  [data-role="post"] h1 {
+    font-size: var(--font-size-XL);
+    text-align: center;
+    padding: var(--unit);
+  }
+
+  [data-role="post"] h2, [data-role="post"] h3 {
+    margin: calc(var(--unit) * 2) 0 var(--unit) 0;
+  }
+
+  [data-role="post"] blockquote {
+    background-color: var(--color-skeleton);
+    color: var(--color-lighten);
+    margin-bottom: var(--unit);
+    padding: var(--unit);
+  }
+
+    [data-role="post"] blockquote p strong {
+      display: block;
+      font-size: var(--font-size-S);
+      margin-top: calc(var(--unit) * 1);
+    }
+
+  [data-role="post"] p {
+    font-family: var(--font-content);
+  }
+
+  [data-role="post"] > p {
+    margin-bottom: var(--unit);
+    line-height: 125%;
+  }
+
+  [data-role="post"] img {
+    display: block;
+    width: 100%;
+  }
+
+  [data-role="post"] .author {
+    display: flex;
+    align-items: center;
+    line-height: 100%;
+  }
+
+    [data-role="post"] .author img {
+      border-radius: 50%;
+      height: calc(var(--unit) * 2.2);
+      margin-right: calc(var(--unit) / 2);
+      width: calc(var(--unit) * 2.2);
+    }
+
+    [data-role="post"] .author strong {
+      display: block;
+    }

@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-size: 20px;
+  margin: calc(var(--unit) * 1.2);
+}
+
+body main {
+  margin: 0 auto;
+  max-width: var(--wrapper);
+  padding-top: calc(var(--unit) * 7.2);
+}
+
+/* -- Elements -- */
+a {  color: var(--color); }
+a:hover:not(.button) { opacity: 0.66; }
+a.clean { text-decoration: none; }
+a.clean:hover { color: var(--color); }
+
+h3 {
+  font-size: var(--font-size);
+}
+
+small {
+  color: var(--color-lighten);
+}
+
+button, .button {
+  background-color: var(--color);
+  border: 0;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: var(--font-size-XS);
+  outline: 0;
+  padding: calc(var(--unit) / 1.75) calc(var(--unit) / 1.25);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+button:hover, .button:hover {
+  background-color: var(--color-accent);
+  color: black;
+  /*color: var(--color);*/
+}
+
+img, .img {
+  background-color: var(--color-skeleton);
+  border: 0;
+}
+
+/* -- Class -- */
+.font-content, .font-content * {
+  font-family: var(--font-content);
+}
+
+.color-lighten {
+  color: var(--color-lighten);
+}
+
+.underline {
+  border-bottom: 1px solid var(--color-skeleton);
+  margin-bottom: var(--unit);
+  padding: var(--unit) 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.skeleton {
+  background-color: var(--color-skeleton);
+}

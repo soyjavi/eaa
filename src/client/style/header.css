@@ -1,0 +1,49 @@
+header {
+  background: var(--bg-opacity);
+  padding: calc(var(--unit) * 1.2);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+  header .wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    max-width: var(--wrapper);
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: var(--font-size);
+    margin-bottom: calc(var(--unit) / 4);
+  }
+
+    header h1 strong {
+      background: var(--color);
+      color: var(--bg-color);
+      padding: 0 0.4rem;
+    }
+
+    header h1 .cursor {
+      animation: blinker 1s linear infinite;
+      background: var(--color);
+      top: 0.4rem;
+      display: inline-block;
+      height: 1.95rem;
+      margin-left: calc(var(--unit) / 2);
+      position: relative;
+      width: calc(var(--unit) / 5);
+    }
+
+  header small {
+    display: block;
+    max-width: 272px;
+    font-size: var(--font-size-XS);
+  }
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}

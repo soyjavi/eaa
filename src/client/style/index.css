@@ -1,0 +1,35 @@
+:root {
+  --bg-color: white;
+  --bg-opacity: rgba(255,255,255,0.85);
+  --color: #111;
+  --color-lighten: #666;
+  --color-accent: #FFD700;
+  --color-hover: blue;
+  --color-skeleton: #eee;
+
+  --font: 'VT323', monospace;
+  --font: 'Fira Sans', sans-serif;
+  --font-content: 'Cardo', serif;
+  --font-size-XL: 3rem;
+  --font-size-L: 2.4rem;
+  --font-size: 1.6rem;
+  --font-size-S: 1.2rem;
+  --font-size-XS: 0.9rem;
+
+  --unit: 1rem;
+
+  --wrapper: 1220px;
+  --wrapper-post: 640px;
+}
+
+@import './common.css';
+
+/* -- views -- */
+@import './home.css';
+@import './post.css';
+@import './affiliates.css';
+
+/* -- components -- */
+@import './header.css';
+@import './footer.css';
+@import './post-item.css';

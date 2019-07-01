@@ -1,20 +1,36 @@
 {
-  "name": "el-anarquista-financiero",
-  "version": "0.0.3",
+  "name": "el-activista-financiero",
+  "version": "0.1.0",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
-  "main": "dist/index.js",
-  "scripts": {
-    "build-babel": "babel -d ./dist ./src -s",
-    "start": "babel-node index.js"
-  },
   "dependencies": {
+    "dotenv": "8.0.0",
+    "express": "4.16.3",
+    "on-finished": "2.3.0",
+    "showdown": "1.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "@babel/node": "7.0.0",
+    "@babel/plugin-proposal-throw-expressions": "7.0.0",
+    "@babel/preset-env": "7.1.5",
     "babel-preset-env": "^1.7.0",
-    "babel-cli": "^6.26.0",
-    "express": "^4.16.3",
-    "showdown": "^1.7.1"
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "2.14.0",
+    "parcel-bundler": "1.12.3"
   },
   "engines": {
     "node": "10.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/client/index.js src/client/style/index.css",
+    "watch": "parcel src/client/index.js src/client/style/index.css",
+    "server": "babel-node index.js",
+    "start": "yarn build && yarn server",
+    "start:dev": "nodemon --ignore '/dist/**' --exec yarn start",
+    "lint": "eslint src/**"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/elanarquistafinanciero"
