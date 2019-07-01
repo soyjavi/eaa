@@ -1,6 +1,6 @@
 {
   "name": "el-anarquista-financiero",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "main": "dist/index.js",
   "scripts": {
