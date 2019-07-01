@@ -4,4 +4,5 @@ window.eaf = {
   events,
 };
 
-// eaf.events.theme();
+const currentHour = new Date().getHours();
+if (currentHour >= 19 || currentHour <= 7) window.eaf.events.theme();
