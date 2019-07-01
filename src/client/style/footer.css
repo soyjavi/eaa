@@ -6,5 +6,11 @@
 
 footer {
   margin-top: calc(var(--unit) * 4);
+  margin-bottom: calc(var(--unit) * 2);
   text-align: center;
+}
+
+footer > * {
+  display: block;
+  margin: calc(var(--unit) / 2) 0;
 }

@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+
+
 body {
   background-color: var(--bg-color);
   color: var(--color);
@@ -56,9 +58,16 @@ img, .img {
   border: 0;
 }
 
+/* -- Browser spec -- */
+::-webkit-scrollbar { display: none; }
+
 /* -- Class -- */
 .font-content, .font-content * {
   font-family: var(--font-content);
+}
+
+.font-XS {
+  font-size: var(--font-size-XS);
 }
 
 .color-lighten {

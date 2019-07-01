@@ -18,3 +18,7 @@ remote
 ```
 git merge glitch && refresh
 ```
+
+```
+git checkout master && refresh
+```

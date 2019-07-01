@@ -1,6 +1,6 @@
 {
   "name": "el-activista-financiero",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "dependencies": {
     "dotenv": "8.0.0",

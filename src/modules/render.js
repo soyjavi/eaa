@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 
+import PKG from '../../package.json';
 import cache from './cache';
 
 dotenv.config();
@@ -23,7 +24,7 @@ export default (filename = 'index', values = {}) => {
   }
 
   const dataSource = Object.assign({}, values, {
-    DOMAIN, TITLE, DESCRIPTION, FAVICON,
+    DOMAIN, TITLE, DESCRIPTION, FAVICON, VERSION: PKG.version,
   });
   Object.keys(dataSource).forEach((key) => {
     view = view.replace(new RegExp(`{{${key}}}`, 'g'), dataSource[key]);
