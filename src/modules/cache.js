@@ -29,7 +29,7 @@ class Cache {
   }
 
   set(key, value, seconds = 120) {
-    if (!CACHE) return undefined;
+    if (!CACHE) return value;
 
     this.store[key] = value;
     this.interval[key] = seconds;

@@ -1,4 +1,5 @@
 [data-role="home"] .banner-subscribe {
+  background-color: var(--color-skeleton);
   margin-bottom: calc(var(--unit) * 2);
   width: 100%;
 }

@@ -1,0 +1,78 @@
+[data-role="products"] {
+  text-align: center;
+}
+[data-role="products"] .prices {
+  margin: calc(var(--unit) * 2) calc(var(--unit) * 2) var(--unit) calc(var(--unit) * 2);
+}
+
+[data-role="products"] .price {
+  border: solid 1px var(--color-skeleton);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  margin: calc(var(--unit) * 2) 0;
+  padding: calc(var(--unit) * 2);
+  text-align: center;
+  width: 30%;
+}
+
+  [data-role="products"] .price.main {
+    background-color: var(--color-skeleton);
+    width: 40%;
+    margin: 0;
+    padding-left: calc(var(--unit) * 3);
+    padding-right: calc(var(--unit) * 3);
+  }
+
+    [data-role="products"] .price.main h3 {
+      font-size: 150%;
+    }
+
+  [data-role="products"] .price > *:not(:last-child) {
+    margin-bottom: var(--unit);
+  }
+
+  [data-role="products"] .price img {
+    height: calc(var(--unit) * 5);
+    width: calc(var(--unit) * 5);
+    margin-bottom: var(--unit);
+  }
+
+  [data-role="products"] .price .amount {
+    /*margin-top: calc(var(--unit) * 2);*/
+  }
+
+    [data-role="products"] .price .amount > strong {
+      font-size: var(--font-size-XL);
+      font-weight: bold;
+      justify-content: center;
+      line-height: var(--font-size-XL);
+    }
+
+      [data-role="products"] .price .amount > strong small{
+        font-size: var(--font-size);
+        line-height: var(--font-size);
+        margin-left: calc(var(--unit) / 4);
+        margin-top: calc(var(--unit) / 4);
+        margin-right: calc(var(--unit) * -1);
+        width: var(--unit);
+      }
+
+    [data-role="products"] .price .amount > small {
+      font-size: var(--font-size-XS);
+    }
+
+
+  [data-role="products"] .price ul {
+    border-top: solid 1px var(--color-lighten);
+    flex: 1;
+    font-size: var(--font-size-XS);
+    list-style: none;
+    margin-left: var(--unit);
+    margin-right: var(--unit);
+    padding-top: var(--unit);
+  }
+
+  [data-role="products"] .price li {
+    margin: calc(var(--unit) / 2) 0;
+  }

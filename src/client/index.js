@@ -1,8 +1,14 @@
-import events from './events';
+// import dashboard from './dashboard';
+import on from './on';
+import theme, { LIGHT, DARK } from './theme';
 
 window.eaf = {
-  events,
+  // dashboard,
+  on,
+  theme,
 };
 
 const currentHour = new Date().getHours();
-if (currentHour >= 19 || currentHour <= 7) window.eaf.events.theme();
+theme.render((currentHour >= 19 || currentHour <= 6) ? DARK : LIGHT);
+
+// theme.render(DARK);

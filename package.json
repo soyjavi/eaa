@@ -3,10 +3,16 @@
   "version": "0.1.2",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "dependencies": {
+    "cron": "1.7.1",
     "dotenv": "8.0.0",
     "express": "4.16.3",
+    "node-cron": "2.0.3",
+    "node-fetch": "2.6.0",
     "on-finished": "2.3.0",
-    "showdown": "1.7.1"
+    "showdown": "1.7.1",
+    "sma": "0.1.1",
+    "telegraf": "3.30.1",
+    "vanilla-storage": "0.1.4"
   },
   "devDependencies": {
     "@babel/cli": "7.1.5",
@@ -18,6 +24,7 @@
     "eslint": "5.9.0",
     "eslint-config-airbnb": "latest",
     "eslint-plugin-import": "2.14.0",
+    "google-trends-api": "4.9.0",
     "parcel-bundler": "1.12.3"
   },
   "engines": {
@@ -29,12 +36,15 @@
     "watch": "parcel src/client/index.js src/client/style/index.css",
     "server": "babel-node index.js",
     "start": "yarn build && yarn server",
-    "start:dev": "nodemon --ignore '/dist/**' --exec yarn start",
+    "start:dev": "nodemon --ignore '/dist/**' --ignore '/store/**' --exec yarn start",
     "lint": "eslint src/**"
   },
   "repository": {
     "url": "https://glitch.com/edit/#!/elanarquistafinanciero"
   },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "license": "MIT",
   "keywords": []
 }

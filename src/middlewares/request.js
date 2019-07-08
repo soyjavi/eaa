@@ -12,6 +12,8 @@ export default (req, res, next) => {
   // Disable caching so we'll always get the latest comments.
   res.setHeader('Cache-Control', 'no-cache');
 
+  req.props = Object.assign({}, req.params, req.query, req.body);
+
   onFinished(res, () => {
     console.log(`${req.method} ${originalUrl} ${res.statusCode} - - ${new Date().getTime() - timestamp} ms`);
   });

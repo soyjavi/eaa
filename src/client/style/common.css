@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-
-
 body {
   background-color: var(--bg-color);
   color: var(--color);
   font-size: 20px;
   margin: calc(var(--unit) * 1.2);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body main {
@@ -37,6 +37,7 @@ small {
 button, .button {
   background-color: var(--color);
   border: 0;
+  border-radius: var(--border-radius);
   color: var(--bg-color);
   cursor: pointer;
   font-weight: bold;
@@ -62,6 +63,13 @@ img, .img {
 ::-webkit-scrollbar { display: none; }
 
 /* -- Class -- */
+.amount { text-align: right; }
+  .amount > span {
+    font-size: 75%;
+    font-weight: normal;
+    margin-left: 3%;
+  }
+
 .font-content, .font-content * {
   font-family: var(--font-content);
 }
@@ -87,4 +95,25 @@ img, .img {
 
 .skeleton {
   background-color: var(--color-skeleton);
+}
+
+.spinner:before {
+  display: inline-block;
+  content: '⠋';
+  animation: spin 1s linear infinite;
+  vertical-align: middle;
+  margin-right: calc(var(--unit) / 2);
+}
+
+@keyframes spin {
+   0% { content: '⠋' }
+  10% { content: '⠙' }
+  20% { content: '⠹' }
+  30% { content: '⠸' }
+  40% { content: '⠼' }
+  50% { content: '⠴' }
+  60% { content: '⠦' }
+  70% { content: '⠧' }
+  80% { content: '⠇' }
+  90% { content: '⠏' }
 }

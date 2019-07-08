@@ -18,8 +18,12 @@
 
   --unit: 1rem;
 
+  --border-radius: 0.15rem;
+
   --wrapper: 1220px;
   --wrapper-post: 640px;
+
+  --animation: 300ms ease-in-out;
 }
 
 @import './common.css';
@@ -32,4 +36,6 @@
 /* -- components -- */
 @import './header.css';
 @import './footer.css';
+@import './dialog.css';
 @import './post-item.css';
+@import './products.css';
