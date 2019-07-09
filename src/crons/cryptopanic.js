@@ -71,9 +71,9 @@ export default async () => {
       currencies: currencies.map(currency => currency.code),
     }));
 
-    const browser = await puppeteer.launch();
-  
-    puppeteer.launch({ args: isDocker() ? ['--no-sandbox'] : [] });
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox'],
+    });
 
     const page = await browser.newPage();
     await page.emulate(puppeteer.devices['iPhone 6']);

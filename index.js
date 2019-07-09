@@ -36,7 +36,7 @@ app.use(error);
 
 const listener = server.listen(PORT, () => {
   console.log(`"${TITLE}" is ready on port ${listener.address().port}`);
-  // crons.start();
+  crons.start();
 });
 
 ['exit', 'SIGINT', 'SIGUSR1', 'SIGUSR2', 'uncaughtException', 'SIGTERM'].forEach((eventType) => {
