@@ -2,23 +2,26 @@ import { CronJob } from 'cron';
 
 import cryptopanic from './cryptopanic';
 
-const start = async () => {
-  const crons = {};
+const DEFAULTS = { runOnInit: true, start: true, timeZone: 'America/Los_Angeles' };
+const crons = {};
 
-  console.log('starting crons...');
+const start = async () => {
 
   // -- CriptoPanic.com
-  crons.cryptopanic = new CronJob({
-    cronTime: '* 0 * * * *',
-    onTick: cryptopanic,
-    runOnInit: true,
-    start: true,
-  });
-  // crons.cryptopanic.start();
-
-  // -- ?
+  crons.cryptopanic = new CronJob({ cronTime: '*/30 * * * *', onTick: cryptopanic, ...DEFAULTS });
 
   return crons;
 };
 
-export default start();
+const stop = () => {
+  Object.keys(crons).forEach((cron) => {
+    console.log(`[🤖:${cron}]`);
+    crons[cron].stop();
+  });
+};
+
+export default {
+  start,
+
+  stop,
+};
