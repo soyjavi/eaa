@@ -72,6 +72,9 @@ export default async () => {
     }));
 
     const browser = await puppeteer.launch();
+  
+    puppeteer.launch({ args: isDocker() ? ['--no-sandbox'] : [] });
+
     const page = await browser.newPage();
     await page.emulate(puppeteer.devices['iPhone 6']);
 
