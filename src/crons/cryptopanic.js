@@ -1,13 +1,11 @@
-import dotenv from 'dotenv';
 import fetch from 'node-fetch';
 import puppeteer from 'puppeteer';
 import Storage from 'vanilla-storage';
 import Telegram from 'telegraf/telegram';
 
+import { C } from '../common';
 
-dotenv.config();
-const { BOT_ARTICLES, CHAT_ADMIN, CRYPTOPANIC } = process.env;
-
+const { ENV: { BOT_ARTICLES, CHAT_ADMIN, CRYPTOPANIC }, TELEGRAM_PROPS, STORE } = C;
 const BOT = '[🤖:cryptopanic]';
 const SERVICE = 'https://cryptopanic.com/api/v1/posts/';
 
@@ -16,22 +14,19 @@ const fetchData = async (uri, page) => {
 
   await page.goto(uri, { timeout: 10000, waitUntil: ['load', 'networkidle0'] }).catch(() => {});
 
-  const description = await page.$eval('#detail_pane .description-body > p', el => el.innerText).catch(() => {});
+  const summary = await page.$eval('#detail_pane .description-body > p', el => el.innerText).catch(() => {});
   const urlSource = await page.$eval('#detail_pane .post-title a:nth-child(2)', el => el.href);
 
-  return { description, urlSource, image: undefined };
+  return { summary, urlSource, image: undefined };
 };
 
 const sendMessage = ({
-  title, urlSource, description, votes: { positive, negative } = {},
+  title, urlSource, votes: { positive, negative } = {},
 }, telegram) => {
   telegram.sendMessage(
     CHAT_ADMIN,
-    `${BOT}\n[${title}](${urlSource})\n_${description}_}\n👍 ${positive}  👎 ${negative}`,
-    {
-      parse_mode: 'Markdown',
-      disable_web_page_preview: true,
-    },
+    `${BOT} 👍 ${positive}  👎 ${negative}\n[${title}](${urlSource})`,
+    TELEGRAM_PROPS,
   );
 };
 
@@ -39,7 +34,7 @@ export default async () => {
   console.log(`${BOT} Searching new articles...`);
 
   const timestamp = (new Date()).getTime();
-  const store = new Storage({ filename: 'crons', defaults: { articles: [] } });
+  const store = new Storage(STORE.CRONS);
   const telegram = new Telegram(BOT_ARTICLES);
   const response = await fetch(`${SERVICE}?auth_token=${CRYPTOPANIC}&filter=rising&kind=news`);
   let newArticles = 0;
@@ -64,14 +59,17 @@ export default async () => {
       title,
       region,
       url,
+      currencies: currencies.map(currency => currency.code),
+      tags: ['crypto'],
       votes: {
         negative, positive, liked, disliked,
       },
       publishedAt,
-      currencies: currencies.map(currency => currency.code),
     }));
 
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+      args: ['--no-sandbox'],
+    });
     const page = await browser.newPage();
     await page.emulate(puppeteer.devices['iPhone 6']);
 

@@ -1,6 +1,7 @@
 [data-role="products"] {
   text-align: center;
 }
+
 [data-role="products"] .prices {
   margin: calc(var(--unit) * 2) calc(var(--unit) * 2) var(--unit) calc(var(--unit) * 2);
 }
@@ -33,35 +34,25 @@
   }
 
   [data-role="products"] .price img {
+    background-color: transparent;
     height: calc(var(--unit) * 5);
     width: calc(var(--unit) * 5);
     margin-bottom: var(--unit);
   }
 
   [data-role="products"] .price .amount {
-    /*margin-top: calc(var(--unit) * 2);*/
+    font-size: var(--font-size-XL);
+    justify-content: center;
+    line-height: var(--font-size-XL);
   }
 
-    [data-role="products"] .price .amount > strong {
-      font-size: var(--font-size-XL);
-      font-weight: bold;
-      justify-content: center;
-      line-height: var(--font-size-XL);
+    [data-role="products"] .price .amount span {
+      margin-left: calc(var(--unit) / 4);
+      margin-top: calc(var(--unit) / 4);
+      margin-right: calc(var(--unit) * -1);
+      width: var(--unit);
+      color: var(--color-lighten);
     }
-
-      [data-role="products"] .price .amount > strong small{
-        font-size: var(--font-size);
-        line-height: var(--font-size);
-        margin-left: calc(var(--unit) / 4);
-        margin-top: calc(var(--unit) / 4);
-        margin-right: calc(var(--unit) * -1);
-        width: var(--unit);
-      }
-
-    [data-role="products"] .price .amount > small {
-      font-size: var(--font-size-XS);
-    }
-
 
   [data-role="products"] .price ul {
     border-top: solid 1px var(--color-lighten);
@@ -76,3 +67,33 @@
   [data-role="products"] .price li {
     margin: calc(var(--unit) / 2) 0;
   }
+
+@media (max-width: 767px) {
+  [data-role="products"] .prices {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  [data-role="products"] .prices > * {
+    width: 100% !important;
+    margin: 0 0 var(--unit) 0 !important;
+    order: 1;
+  }
+
+  [data-role="products"] .price.main {
+    order: 0;
+  }
+
+}
+
+@media (max-width: 1023px) {
+  [data-role="products"] .prices { margin: calc(var(--unit) * 2) 0 var(--unit) 0; }
+
+  [data-role="products"] .price { padding: calc(var(--unit) * 2) calc(var(--unit) * 1.5); }
+
+  [data-role="products"] .price.main {
+    padding-left: calc(var(--unit) * 2);
+    padding-right: calc(var(--unit) * 2);
+  }
+}

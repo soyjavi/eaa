@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <link id="favicon" rel="icon" href="/static/{{FAVICON}}" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/static/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Fira+Sans:400,700|Material+Icons&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/style/index.css">
+    <script src="/index.js" defer></script>
+    {{script}}
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div>
+          <a href="/" class="clean">
+            <h1>activista <strong>financiero</strong><span class="cursor"></span></h1>
+          </a>
+          <small class="font-content">
+            on a long enough timeline the survival rate for everyone drops to zero.
+          </small>
+        </div>
+        <nav>
+          <a class="button outlined" href="/productos">Productos</a>
+        </nav>
+      </div>
+    </header>
+
+    <main data-role="{{role}}">
+      {{main}}
+    </main>
+
+    <button class="icon" id="button-theme" onclick="eaf.on.toggleTheme()">wb_sunny</button>
+
+    <footer>
+      <small class="row">
+        <a href="/manifiesto">Manifiesto</a>
+        <a href="mailto:{{EMAIL}}">Ayuda</a>
+        <a href="/afiliados">Afiliados</a>
+        <a href="/productos">Productos</a>
+      </small>
+      <small class="font-content font-XS">
+        ©2019 {{DOMAIN}} / Soshilabs, Ltd. v{{VERSION}}
+      </small>
+    </footer>
+
+    {{dialog}}
+    {{script}}
+  </body>
+</html>

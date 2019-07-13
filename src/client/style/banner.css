@@ -1,0 +1,77 @@
+.banner {
+  overflow: hidden;
+  background-color: var(--color-skeleton);
+  border-radius: var(--border-radius);
+  padding: var(--unit);
+  position: relative;
+  margin-bottom: calc(var(--unit) * 2);
+  text-align: left;
+}
+
+.banner.hide { display: none; }
+
+.banner.fullwidth {
+  padding: calc(var(--unit) * 2) calc(var(--unit) * 4);
+  width: 100%;
+}
+
+  .banner.fullwidth h1 { font-size: var(--font-size-L); }
+
+  .banner.fullwidth p { max-width: 68%; }
+
+  .banner.fullwidth .form { max-width: 45%; }
+
+.banner > * { z-index: 1 }
+
+.banner p { margin: calc(var(--unit) / 2) 0; }
+
+.banner input { margin-right: var(--unit); }
+
+/* -- Images -- */
+.banner.fullwidth.image {
+  padding-left: calc(var(--unit) * 16);
+}
+
+.banner:not(.fullwidth).image:before {
+  opacity: 0.05;
+}
+
+.banner.image:before {
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateX(-25%) scale(1.25) rotateZ(33deg);
+  width: calc(var(--unit) * 14);
+  z-index: 0;
+}
+
+.banner.image.subscribe:before { background-image: url('../../../public/icon-weekly.png'); }
+
+.banner.image.bot:before { background-image: url('../../../public/icon-bot.png'); }
+
+.banner.image.report:before { background-image: url('../../../public/icon-report.png'); }
+
+.banner.image.course:before { background-image: url('../../../public/icon-course.png'); }
+
+
+@media (max-width: 767px) {
+  .banner.image:before {
+    opacity: 0.05;
+    filter: gray; /* IE6-9 */
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  }
+  .banner.fullwidth.image { padding: var(--unit); }
+}
+
+
+@media (max-width: 1023px) {
+  .banner.fullwidth h1 { font-size: var(--font-size); }
+  .banner.fullwidth p, .banner.fullwidth .form { max-width: 100%; }
+}

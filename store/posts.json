@@ -1,28 +1,59 @@
-[
-  {
-    "uri": "welcome",
-    "active": true,
-    "date": "2019/06/23",
-    "title": "Bienvenidos al mundo bla bla",
-    "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    "author": "tyler",
-    "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
-    "image": "http://via.placeholder.com/1920x1080?text=placeholder"
-  },
-  {
-    "uri": "que-es-el-dinero",
-    "active": true,
-    "date": "2019",
-    "title": "what is money?",
-    "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "author": "luigi"
-  },
-  {
-    "uri": "que-es-el-dinero",
-    "active": true,
-    "date": "2019",
-    "title": "what is money?",
-    "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "author": "luigi"
-  }
-]
+{
+
+  "public": [
+    {
+      "uri": "welcome",
+      "active": true,
+      "date": "2019/06/23",
+      "title": "Facebook’s Poker Bot Shows How A.I. Can Adapt to Liars",
+      "summary": "In a new study with significant real-world implications, a poker bot crushed human pros at six-player, no-limit Texas Hold ’em.",
+      "author": "tyler",
+      "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
+      "image": "http://via.placeholder.com/1920x1080?text=placeholder"
+    },
+    {
+      "uri": "que-es-el-dinero",
+      "active": true,
+      "date": "2019",
+      "title": "what is money?",
+      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "luigi"
+    },
+    {
+      "uri": "que-es-el-dinero",
+      "active": true,
+      "date": "2019",
+      "title": "what is money?",
+      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "luigi"
+    },
+    {
+      "uri": "que-es-el-dinero",
+      "active": true,
+      "date": "2019",
+      "title": "what is money?",
+      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "luigi"
+    },
+    {
+      "uri": "que-es-el-dinero",
+      "active": true,
+      "date": "2019",
+      "title": "what is money?",
+      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "author": "luigi"
+    },
+    {
+      "uri": "welcome",
+      "active": true,
+      "date": "2019/06/23",
+      "title": "Bienvenidos al mundo bla bla",
+      "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "author": "tyler",
+      "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
+      "image": "http://via.placeholder.com/1920x1080?text=placeholder"
+    }
+  ],
+  "private": []
+}
+

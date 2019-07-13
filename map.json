@@ -1,0 +1,14 @@
+{
+  "subscribe": {
+    "required": ["email"],
+    "optional": ["fingerprint"]
+  },
+  "cart": {
+    "required": ["email", "product", "amount"],
+    "optional": ["telegram"]
+  },
+  "checkout": {
+    "secure": true
+  },
+  "status": {}
+}

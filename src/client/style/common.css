@@ -21,23 +21,20 @@ body main {
 }
 
 /* -- Elements -- */
-a {  color: var(--color); }
-a:hover:not(.button) { opacity: 0.66; }
+a { color: var(--color); }
+a:hover:not(.button), a.button.outlined:hover { opacity: 0.66; }
 a.clean { text-decoration: none; }
 a.clean:hover { color: var(--color); }
 
-h3 {
-  font-size: var(--font-size);
-}
+h3 { font-size: var(--font-size); }
 
-small {
-  color: var(--color-lighten);
-}
+small { color: var(--color-lighten); }
 
 button, .button {
   background-color: var(--color);
   border: 0;
   border-radius: var(--border-radius);
+  /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.33);*/
   color: var(--bg-color);
   cursor: pointer;
   font-weight: bold;
@@ -47,17 +44,48 @@ button, .button {
   text-transform: uppercase;
   text-decoration: none;
 }
+  button:hover, .button:hover {
+    background-color: var(--color-accent);
+    /*box-shadow: none;*/
+    color: black;
+  }
 
-button:hover, .button:hover {
-  background-color: var(--color-accent);
-  color: black;
-  /*color: var(--color);*/
-}
+  button.outlined, .button.outlined, button.solid, .button.solid {
+    background-color: transparent;
+    /*box-shadow: none;*/
+    color: var(--color);
+  }
+
+  button.solid, .button.solid {
+    text-transform: inherit;
+    font-weight: inherit;
+  }
+
+  button.outlined, .button.outlined {
+    border: solid 1px var(--color);
+  }
+
+form, .form { margin: var(--unit) 0; }
 
 img, .img {
   background-color: var(--color-skeleton);
   border: 0;
 }
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px var(--color-lighten);
+  color: var(--color);
+  font-size: var(--font-size-S);
+  width: 100%;
+}
+
+input:active, input:focus {
+  border-bottom-color: var(--color);
+}
+
+textarea, select, input, button { outline: none; }
 
 /* -- Browser spec -- */
 ::-webkit-scrollbar { display: none; }
@@ -67,7 +95,7 @@ img, .img {
   .amount > span {
     font-size: 75%;
     font-weight: normal;
-    margin-left: 3%;
+    margin-left: calc(var(--unit) / 10);
   }
 
 .font-content, .font-content * {
@@ -104,6 +132,27 @@ img, .img {
   vertical-align: middle;
   margin-right: calc(var(--unit) / 2);
 }
+
+.icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+.icon-S { font-size: 16px; }
 
 @keyframes spin {
    0% { content: '⠋' }

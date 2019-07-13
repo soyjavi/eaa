@@ -19,6 +19,7 @@ export default {
         bg: '#111',
         bgOpacity: 'rgba(16,16,16,0.85)',
         color: 'white',
+        colorLighten: '#999',
         colorChartLine: '#555',
         colorSkeleton: '#222',
       }
@@ -26,6 +27,7 @@ export default {
         bg: 'white',
         bgOpacity: 'rgba(255,255,255,0.85)',
         color: 'black',
+        colorLighten: '#555',
         colorChartLine: '#aaa',
         colorSkeleton: '#ddd',
       };
@@ -33,6 +35,7 @@ export default {
     root.style.setProperty('--bg-color', colors.bg);
     root.style.setProperty('--bg-opacity', colors.bgOpacity);
     root.style.setProperty('--color', colors.color);
+    root.style.setProperty('--color-lighten', colors.colorLighten);
     root.style.setProperty('--color-skeleton', colors.colorSkeleton);
     root.style.setProperty('--color-chart-line', colors.colorChartLine);
 

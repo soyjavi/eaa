@@ -25,7 +25,7 @@ header {
     header h1 strong {
       background: var(--color);
       color: var(--bg-color);
-      padding: 0 0.4rem;
+      padding: 0 calc(var(--unit) / 2);
     }
 
     header h1 .cursor {
@@ -41,10 +41,18 @@ header {
 
   header small {
     display: block;
-    max-width: 272px;
+    max-width: 240px;
     font-size: var(--font-size-XS);
+  }
+
+  header nav .button:not(.solid) {
+    margin-left: calc(var(--unit) / 2);
   }
 
 @keyframes blinker {
   50% { opacity: 0; }
+}
+
+@media (max-width: 767px) {
+  header nav { display: none; }
 }
