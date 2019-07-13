@@ -70,6 +70,7 @@ export default async () => {
     const browser = await puppeteer.launch({
       args: ['--no-sandbox'],
     });
+
     const page = await browser.newPage();
     await page.emulate(puppeteer.devices['iPhone 6']);
 

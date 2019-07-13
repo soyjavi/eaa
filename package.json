@@ -1,6 +1,6 @@
 {
   "name": "el-activista-financiero",
-  "version": "0.1.5",
+
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "dependencies": {
     "body-parser": "1.19.0",
