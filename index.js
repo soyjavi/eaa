@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import http from 'http';
 
+import admin from './src/admin';
 import api from './src/api';
 import {
   affiliates, dashboard, post, products, home,
@@ -21,7 +22,6 @@ const server = http.createServer(app);
 // -- Configuration
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(express.cookieParser());
 app.use(cors());
 app.use(compression());
 // -- Statics
@@ -29,6 +29,8 @@ app.use('/static', express.static('public'));
 app.use(express.static('dist'));
 // -- Middlewares
 app.use(request);
+// -- Admin
+app.use('/admin', admin);
 // -- API
 app.use('/api', api);
 // -- Services

@@ -4,6 +4,8 @@ import { C } from '../common';
 import fingerprint from './fingerprint';
 import storage from './storage';
 
+import traderBot from './on/onTraderbotMessage';
+
 const { API } = C;
 const IS_EMAIL = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; // eslint-disable-line
 
@@ -33,8 +35,6 @@ export default {
   async subscribe(el) {
     const [{ value: email }] = el.parentNode.children;
 
-    this.modeSubscribed(true);
-
     if (!IS_EMAIL.test(email)) return;
 
     const response = await fetch('/api/subscribe', {
@@ -51,6 +51,8 @@ export default {
       document.cookie = `authorization=${fingerprint}; expires=-1; path=/`;
     }
   },
+
+  traderBot,
 
   modeSubscribed(subscribed) {
     document.querySelectorAll('.banner').forEach((el) => {

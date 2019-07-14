@@ -73,10 +73,8 @@
   [data-role="post"] article .banner {
   }
     [data-role="post"] article .banner > h1 { font-size: var(--font-size); }
-    [data-role="post"] article .banner > p {
-      font-size: var(--font-size-XS);
-      max-width: 100%;
-    }
+    [data-role="post"] article .banner > p { font-size: var(--font-size-XS); }
+    [data-role="post"] article .banner > * { min-width: 100%; }
 
 
 @media (max-width: 767px) {

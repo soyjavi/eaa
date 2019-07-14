@@ -1,0 +1,26 @@
+<section class="banner fullwidth image bot hide">
+  <h1>Hey {{name}}!<br/> Tienes alguna señal nueva?</h1>
+  <textarea
+    autofocus
+    placeholder="Introduce la señal que has descubierto..."></textarea>
+  <nav class="row">
+    <button class="outlined" onclick="eaf.on.traderBot(this, '[BUY/type] BTC $000.00 (TakeProfit $000.00 - StopLoss $000.00)')" />COMPRAR</button>
+    <button class="outlined" onclick="eaf.on.traderBot(this, '[SELL/type] BTC $000.00 (Trailing $000.00 - StopLoss $000.00)')" />VENDER</button>
+    <span class="anchor"></span>
+    <button onclick="eaf.on.traderBot(this)" />enviar</button>
+  </nav>
+</section>
+
+<h3 class="underline">Ultimas señales</h3>
+<table>
+  <thead>
+    <tr>
+      <th>user</th>
+      <th>message</th>
+      <th>created</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{logs}}
+  </tbody>
+</table>

@@ -34,6 +34,7 @@
 @import './post.css';
 @import './affiliates.css';
 @import './products.css';
+@import './admin.css';
 
 /* -- components -- */
 @import './header.css';

@@ -6995,10 +6995,10 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
-vanilla-storage@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/vanilla-storage/-/vanilla-storage-0.1.4.tgz#6f9b02b5ecd48cf08e6d2fa622549e348129843b"
-  integrity sha512-dX1dGD+n8KOm02AtcQ0xGw9z2W96yt4Eie0kXGDz1z+vorP3vaqjbhBUZSwBa1WYhlqKnlRgms9A/0Nf56ng/Q==
+vanilla-storage@0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/vanilla-storage/-/vanilla-storage-0.1.6.tgz#2394744331f7a121e6604198e62fc2680afbafcc"
+  integrity sha512-P7ZZk5EEp8TNEp7TqLPMSGXfr4Gwh2hOmzfmoad6sjsJwz/652O/XsoXsH5NXYcIpOnGgFzEE+xFQfhZYd+p1g==
 
 vary@^1, vary@~1.1.2:
   version "1.1.2"

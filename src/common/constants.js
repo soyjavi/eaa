@@ -2,14 +2,16 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const {
-  ALPHAVANTAGE, BOT_ARTICLES, CHAT_ADMIN, CRYPTOPANIC,
+  ALPHAVANTAGE, BOT, BOT_ARTICLES, CHANNEL_TRADERBOT, CHAT_ADMIN, CRYPTOPANIC,
 } = process.env;
 
 export default {
   ENV: {
     ALPHAVANTAGE,
+    BOT,
     BOT_ARTICLES,
     CHAT_ADMIN,
+    CHANNEL_TRADERBOT,
     CRYPTOPANIC,
   },
 
@@ -47,6 +49,10 @@ export default {
     USERS: {
       filename: 'users',
       defaults: { admins: [] },
+    },
+    LOGS: {
+      filename: 'logs',
+      defaults: { traderbot: [] },
     },
   },
 
