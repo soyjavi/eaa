@@ -1,7 +1,9 @@
 import fetch from 'node-fetch';
+// import fs from 'fs';
 import puppeteer from 'puppeteer';
 import Storage from 'vanilla-storage';
 import Telegram from 'telegraf/telegram';
+// import translate from '@vitalets/google-translate-api';
 
 import { C } from '../common';
 
@@ -67,9 +69,7 @@ export default async () => {
       publishedAt,
     }));
 
-    const browser = await puppeteer.launch({
-      args: ['--no-sandbox'],
-    });
+    const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
 
     const page = await browser.newPage();
     await page.emulate(puppeteer.devices['iPhone 6']);
@@ -78,14 +78,18 @@ export default async () => {
       const query = { id: article.id };
       const found = store.find(query);
 
-      if (found) store.update(query, article);
-      else {
+      if (found) {
+        store.update(query, article);
+      } else {
         const props = await fetchData(article.url, page);
         store.push({ ...article, ...props });
         sendMessage({ ...article, ...props }, telegram);
         newArticles += 1;
       }
     }
+
+    // const markdown = fs.readFileSync('posts/el-origen-cyberpunk-de-bitcoin.md', 'utf8');
+    // const { text } = await translate(markdown, { to: 'es' }).catch(e => console.log(e));
 
     await browser.close();
 
