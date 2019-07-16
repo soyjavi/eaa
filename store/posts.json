@@ -1,56 +1,55 @@
 {
-
   "public": [
     {
-      "uri": "welcome",
-      "active": true,
-      "date": "2019/06/23",
-      "title": "Facebook’s Poker Bot Shows How A.I. Can Adapt to Liars",
-      "summary": "In a new study with significant real-world implications, a poker bot crushed human pros at six-player, no-limit Texas Hold ’em.",
+      "uri": "el-manifiesto-cyberpunk",
+      "featured": false,
+      "date": "2017/04/10",
+      "title": "El manifiesto cyberpunk",
+      "summary": "El manifiesto cyberpunk de Christian Kirtchev, escrito en 1997 y traducido al español. Lectura obligatoria para entender mejor las raíces ideológicas de las criptomonedas y las tecnologías actuales.",
       "author": "tyler",
-      "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
-      "image": "http://via.placeholder.com/1920x1080?text=placeholder"
+      "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0"
+    },
+    {
+      "uri": "el-origen-cyberpunk-de-bitcoin",
+      "featured": true,
+      "date": "2019/07/14",
+      "title": "El origen cyberpunk de Bitcoin",
+      "summary": "Satoshi Nakamoto fue un individuo brillante que encontró soluciones ingeniosas a las deficiencias de sus predecesores. Es importante recordar y dar crédito a aquellos que hicieron posible esta aventura.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1526913299589-f35a3ddeb7ae"
+    },
+
+    {
+      "uri": "trump-se-declara-en-contra-de-bitcoin",
+      "featured": true,
+      "date": "2019/07/12",
+      "title": "Trump declara oficialmente estar en contra de Bitcoin.",
+      "summary": "Como no era de esperar Donald Trump, el presidente de los Estados Unidos, ha alterado twitter con sus opiniones sobre Bitcoin y el resto de criptomonedas.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1550531996-ff3dcede9477"
+    },
+    {
+      "uri": "que-es-el-indice-NVT-de-inversion-en-bitcoin",
+      "date": "2019/04/13",
+      "title": "Que es el indice NVT y como puede ayudarte a invertir en Bitcoin.",
+      "summary": "NVT es un indice disruptivo y especializado en la propia naturaleza de Bitcoin, alejandose de las tecnicas y metricas de trading contemporaneo.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0"
     },
     {
       "uri": "que-es-el-dinero",
-      "active": true,
       "date": "2019",
       "title": "what is money?",
       "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "author": "luigi"
-    },
-    {
-      "uri": "que-es-el-dinero",
-      "active": true,
-      "date": "2019",
-      "title": "what is money?",
-      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "author": "luigi"
-    },
-    {
-      "uri": "que-es-el-dinero",
-      "active": true,
-      "date": "2019",
-      "title": "what is money?",
-      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "author": "luigi"
-    },
-    {
-      "uri": "que-es-el-dinero",
-      "active": true,
-      "date": "2019",
-      "title": "what is money?",
-      "summary": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "author": "luigi"
+      "author": "luigi",
+      "image": "https://images.unsplash.com/photo-1514108225820-2b602873ac36"
     },
     {
       "uri": "welcome",
-      "active": true,
       "date": "2019/06/23",
       "title": "Bienvenidos al mundo bla bla",
       "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "author": "tyler",
-      "thumbnail": "http://via.placeholder.com/256x256?text=placeholder",
       "image": "http://via.placeholder.com/1920x1080?text=placeholder"
     }
   ],

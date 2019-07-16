@@ -1,6 +1,6 @@
 {
-  "name": "el-activista-financiero",
-
+  "name": "af",
+  "version": "0.1.0",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "dependencies": {
     "body-parser": "1.19.0",
@@ -16,7 +16,7 @@
     "showdown": "1.7.1",
     "sma": "0.1.1",
     "telegraf": "3.30.1",
-    "vanilla-storage": "0.1.4"
+    "vanilla-storage": "0.1.6"
   },
   "devDependencies": {
     "@babel/cli": "7.1.5",

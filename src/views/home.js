@@ -2,7 +2,7 @@ import Storage from 'vanilla-storage';
 
 import { C, render } from '../common';
 
-const { STORE } = C;
+const { STORE, UNSPLASH_PROPS } = C;
 
 export default (req, res) => {
   const posts = new Storage(STORE.POSTS);
@@ -12,19 +12,18 @@ export default (req, res) => {
 
   users.get('admins');
   posts.get('public').value
-    // .reverse()
     .forEach((post) => {
       const author = users.findOne({ id: post.author });
-      postItems += render('post-item', { ...post, author: author.name });
-    });
+      const itemProps = {
+        ...post,
+        author: author.name,
+        image: `${post.image}${UNSPLASH_PROPS}&w=${post.featured ? '640' : '192'}`,
+        class: post.featured ? 'featured' : undefined,
+      };
 
-  posts.get('featured').value
-    .slice(0, 2)
-    .forEach((post) => {
-      const author = users.findOne({ id: post.author });
-      featured += render('post-item', { ...post, author: author.name, class: 'featured' });
+      if (post.featured) featured += render('post-item', itemProps);
+      else postItems += render('post-item', itemProps);
     });
-
 
   res.send(render('index', {
     role: 'home',

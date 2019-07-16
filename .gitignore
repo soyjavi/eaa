@@ -3,3 +3,4 @@
 dist
 node_modules
 store/crons.json
+store/logs.json

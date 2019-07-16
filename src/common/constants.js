@@ -19,7 +19,7 @@ export default {
   DOMAIN: 'activistafinanciero.com',
   EMAIL: 'tyler.durden.unnamed@gmail.com',
   TITLE: 'activista financiero',
-  DESCRIPTION: 'on a long enough timeline the survival rate for everyone drops to zero.',
+  DESCRIPTION: 'En una línea de tiempo suficientemente larga, la tasa de supervivencia para todos baja a cero.',
   FAVICON: '/favicon-app.png',
 
   // -- API
@@ -57,4 +57,6 @@ export default {
   },
 
   TELEGRAM_PROPS: { parse_mode: 'Markdown', disable_web_page_preview: true },
+
+  UNSPLASH_PROPS: '?ixlib=rb-1.2.1&auto=format&fit=crop&q=80',
 };

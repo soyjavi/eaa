@@ -11,17 +11,19 @@
   [data-role="post"] > .fullwidth {
     background-position: center;
     background-size: cover;
+    background-color: var(--color-skeleton);
     height: 50vh;
     width: 100%;
     margin: calc(var(--unit) * 3) 0;
   }
 
-  [data-role="post"] > h1 { font-size: var(--font-size-XL); }
-
+  [data-role="post"] > h1 {
+    font-size: var(--font-size-XL);
+  }
+    [data-role="post"] > h1, [data-role="post"] > h1 > * { text-align: left; }
     [data-role="post"] > h1 + p {
       font-size: var(--font-size);
       padding: var(--unit) 0;
-      text-align: left;
     }
 
   [data-role="post"] > .author {
@@ -66,7 +68,9 @@
     margin-bottom: var(--unit);
   }
 
-  [data-role="post"] article > p, [data-role="post"] article li {
+  [data-role="post"] article > p,
+  [data-role="post"] article > p *,
+  [data-role="post"] article li {
     font-family: var(--font-content) !important;
     line-height: 138%;
   }

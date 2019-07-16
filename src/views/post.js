@@ -4,7 +4,7 @@ import Storage from 'vanilla-storage';
 
 import { C, cache, render } from '../common';
 
-const { STORE } = C;
+const { STORE, UNSPLASH_PROPS } = C;
 const converter = new showdown.Converter();
 
 export default (req, res) => {
@@ -30,6 +30,7 @@ export default (req, res) => {
       role: 'post',
       main: render('post', {
         ...post,
+        image: `${post.image}${UNSPLASH_PROPS}&w=1366`,
         author: author.name,
         avatar: author.avatar || '',
         markdown: converter.makeHtml(fs.readFileSync(uriFile, 'utf8')),
