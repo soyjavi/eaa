@@ -16,6 +16,7 @@ const calc = () => {
     fingerprint = UUID(Object.values(sample).join('-'));
     storage.set(KEY, fingerprint);
   }
+  document.cookie = `authorization=${fingerprint}; expires=-1; path=/;`;
 
   return fingerprint;
 };

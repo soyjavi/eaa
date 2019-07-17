@@ -55,9 +55,10 @@ export default {
   traderBot,
 
   modeSubscribed(subscribed) {
-    document.querySelectorAll('.banner').forEach((el) => {
+    // document.querySelectorAll('.banner.subscribe, .banner.bot:not(.admin)').forEach((el) => {
+    document.querySelectorAll('*:not([data-role="admin"]) .banner').forEach((el) => {
       let method;
-      if (el.classList.contains('subscribe')) method = subscribed ? 'add' : 'remove'
+      if (el.classList.contains('subscribe')) method = subscribed ? 'add' : 'remove';
       else method = subscribed ? 'remove' : 'add';
 
       el.classList[method]('hide');

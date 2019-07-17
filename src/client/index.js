@@ -13,7 +13,7 @@ window.eaf = {
 // -- auto-config
 on.modeSubscribed(storage.get('subscribe'));
 
-if (document.querySelector('main').getAttribute('data-role') === 'admin') theme.render(DARK)
+if (document.querySelector('main').getAttribute('data-role') === 'admin') theme.render(DARK);
 else {
   const currentHour = new Date().getHours();
   theme.render((currentHour >= 19 || currentHour <= 6) ? DARK : LIGHT);
