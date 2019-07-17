@@ -1,13 +1,8 @@
-<div data-role="post-item" class={{class}}>
+<a href="/{{uri}}" alt="{{title}}" class="postItem clean {{class}}">
   <div class="info">
-    <a href="/{{uri}}" alt="{{title}}" class="clean">
-      <h2>{{title}}</h2>
-      <p class="font-content color-lighten">{{summary}}</p>
-    </a>
-    <small class="row">
-      <a href="/author/{{author}}" alt={{author}} class="clean">{{author}}</a>
-      <span>&nbsp;- {{date}}</span>
-    </small>
+    <h2>{{title}}</h2>
+    <p class="font-content color-lighten">{{summary}}</p>
+    <small>{{author}} - {{date}}</small>
   </div>
   <div class="img" style="background-image: url({{image}});"></div>
-</div>
+</a>

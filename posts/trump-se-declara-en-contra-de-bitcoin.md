@@ -12,6 +12,7 @@ De todos modos, aparte de eso, Trump continuó afirmando que las criptomonedas n
 Después de poner en contra a toda la comunidad de Bitcoin, Trump se fue a golpear a Libra, escribiendo:
 
 >«La “moneda virtual” de Facebook Libra tendrá poca reputación o fiabilidad. Si Facebook y otras compañías desean convertirse en un banco, deben buscar una nueva Carta Bancaria y estar sujetos a todos los Reglamentos Bancarios, al igual que otros Bancos, ambos Nacionales».
+>**Donald J. Trump - 12 de julio de 2019**
 
 Los comentarios del líder estadounidense vienen, como se mencionó anteriormente, tras el escepticismo de la criptomoneda corporativa de Powell. Representantes de la Cámara de los Estados Unidos, líderes de bancos centrales y otras personas notables en el escenario de la política y las finanzas globales. Al ver que esta reciente denuncia proviene directamente de Trump, no está claro cómo Libra o el resto del espacio de Bitcoin avanzará.
 

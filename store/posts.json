@@ -51,7 +51,16 @@
       "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       "author": "tyler",
       "image": "http://via.placeholder.com/1920x1080?text=placeholder"
+    },
+    {
+      "uri": "manifiesto",
+      "date": "2017/04/10",
+      "title": "Manifiesto",
+      "summary": "Debemos ayudar a cualquier individuo que quiera buscar su autonomia y libertad financiera, independientemente de su situacion, estado o ideologia.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1558914482-f75b0419b420"
     }
+
   ],
   "private": []
 }

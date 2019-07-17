@@ -46,14 +46,6 @@
     line-height: var(--font-size-XL);
   }
 
-    [data-role="products"] .price .amount span {
-      margin-left: calc(var(--unit) / 4);
-      margin-top: calc(var(--unit) / 4);
-      margin-right: calc(var(--unit) * -1);
-      width: var(--unit);
-      color: var(--color-lighten);
-    }
-
   [data-role="products"] .price ul {
     border-top: solid 1px var(--color-lighten);
     flex: 1;

@@ -42,7 +42,6 @@
 
     [data-role="post"] > .author strong { display: block; }
 
-
   [data-role="post"] article h2, [data-role="post"] article h3 {
     margin: calc(var(--unit) * 2) 0 var(--unit) 0;
   }
@@ -56,6 +55,7 @@
     [data-role="post"] article blockquote * {
       color: var(--color-lighten);
       font-family: var(--font-content) !important;
+      font-size: var(--font-size-S);
     }
 
     [data-role="post"] article blockquote p strong {
@@ -70,8 +70,10 @@
 
   [data-role="post"] article > p,
   [data-role="post"] article > p *,
-  [data-role="post"] article li {
-    font-family: var(--font-content) !important;
+  [data-role="post"] article li,
+  [data-role="post"] article li * {
+    font-family: var(--font-content);
+    font-size: var(--font-size-markdown);
     line-height: 138%;
   }
 
@@ -86,8 +88,7 @@
     margin: calc(var(--unit) * 2) 0;
   }
 
-  [data-role="post"] article .banner {
-  }
+  [data-role="post"] article .banner { margin-top: calc(var(--unit) * 2); }
     [data-role="post"] article .banner > h1 { font-size: var(--font-size); }
     [data-role="post"] article .banner > p { font-size: var(--font-size-XS); }
     [data-role="post"] article .banner > * { min-width: 100%; }
@@ -95,20 +96,21 @@
 
 @media (max-width: 767px) {
   [data-role="post"] h1 { font-size: var(--font-size-L); }
-
   [data-role="post"] h1 + p { font-size: var(--font-size-S) }
-
-  [data-role="post"] .fullwidth {
-    height: 38vh;
-  }
+  [data-role="post"] .fullwidth { height: 38vh; }
 
   [data-role="post"] article blockquote {
-    font-size: var(--font-size-S);
     padding: calc(var(--unit) * 1);
   }
 
   [data-role="post"] article blockquote p strong {
     font-size: var(--font-size-XS);
     margin-top: calc(var(--unit) / 2);
+  }
+
+  [data-role="post"] article > p,
+  [data-role="post"] article > p *,
+  [data-role="post"] article li {
+    font-size: var(--font-size-S);
   }
 }

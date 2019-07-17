@@ -19,7 +19,7 @@ export default {
   DOMAIN: 'activistafinanciero.com',
   EMAIL: 'tyler.durden.unnamed@gmail.com',
   TITLE: 'activista financiero',
-  DESCRIPTION: 'En una línea de tiempo suficientemente larga, la tasa de supervivencia para todos baja a cero.',
+  DESCRIPTION: 'Tratemos de proteger todo lo que es importante para nosotros.',
   FAVICON: '/favicon-app.png',
 
   // -- API

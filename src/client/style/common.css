@@ -8,10 +8,11 @@
 body {
   background-color: var(--bg-color);
   color: var(--color);
-  font-size: 20px;
+  font-size: 16px;
   margin: calc(var(--unit) * 1.2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background var(--animation);
 }
 
 body main {
@@ -22,7 +23,6 @@ body main {
 
 /* -- Elements -- */
 a { color: var(--color); }
-a:hover:not(.button), a.button.outlined:hover { opacity: 0.66; }
 a.clean { text-decoration: none; }
 a.clean:hover { color: var(--color); }
 
@@ -34,7 +34,6 @@ button, .button {
   background-color: var(--color);
   border: 0;
   border-radius: var(--border-radius);
-  /*box-shadow: 0 0 4px rgba(0, 0, 0, 0.33);*/
   color: var(--bg-color);
   cursor: pointer;
   font-weight: bold;
@@ -43,16 +42,15 @@ button, .button {
   padding: calc(var(--unit) / 1.75) calc(var(--unit) / 1.25);
   text-transform: uppercase;
   text-decoration: none;
+  transition: background var(--animation);
 }
   button:hover, .button:hover {
     background-color: var(--color-accent);
-    /*box-shadow: none;*/
     color: black;
   }
 
   button.outlined, .button.outlined, button.solid, .button.solid {
     background-color: transparent;
-    /*box-shadow: none;*/
     color: var(--color);
   }
 

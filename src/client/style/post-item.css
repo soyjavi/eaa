@@ -1,24 +1,20 @@
-[data-role="post-item"] {
+.postItem {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: calc(var(--unit) * 3) 0;
 }
-  [data-role="post-item"] .info {
-    flex: 1;
-    margin-right: var(--unit);
-  }
-    [data-role="post-item"] .info h2 {
-      font-size: var(--font-size);
-      margin-bottom: calc(var(--unit) / 4);
-    }
+  .postItem .info { flex: 1; }
+    .postItem .info h2 { font-size: var(--font-size); }
 
-    [data-role="post-item"] .info p {
+    .postItem .info p {
       font-size: var(--font-size-S);
-      margin-bottom: calc(var(--unit) / 2);
+      margin: calc(var(--unit) / 2) 0;
     }
 
-  [data-role="post-item"] .img {
+    .postItem .info small { font-size: var(--font-size-XS); }
+
+  .postItem .img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,14 +22,18 @@
     margin-left: calc(var(--unit) / 2);
     min-height: 108px;
     width: 136px;
+    pointer-events: none;
+    z-index: -1;
   }
 
-  [data-role="post-item"].featured {
+  .poistItem:not(.featured) .info { margin-right: var(--unit); }
+
+  .postItem.featured {
     flex-direction: column;
     margin: 0;
     flex: 1;
   }
-    [data-role="post-item"].featured .img {
+    .postItem.featured .img {
       order: -1;
       width: 100%;
       height: calc(var(--unit) * 10);
@@ -43,20 +43,23 @@
 
 
 @media (max-width: 767px) {
-  [data-role="post-item"] {
-    margin: calc(var(--unit) * 2) 0;
+  .postItem {
+    margin: 0 0 calc(var(--unit) * 3) 0;
+    flex-direction: column;
   }
-
-    [data-role="post-item"] .info h2 { font-size: var(--font-size-S); }
-
-    [data-role="post-item"] .info p {
+    .postItem .info h2 { font-size: var(--font-size-S); }
+    .postItem .info p {
+      display: block;
       text-align: justify;
+      font-size: var(--font-size-S);
+      height: calc(var(--unit) * 5);
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
-
-    [data-role="post-item"] .info p, [data-role="post-item"] .info .row { font-size: var(--font-size-XS); }
-
-    [data-role="post-item"] .img {
-      min-height: 80px;
-      width: 80px;
+    .postItem .img {
+      order: -1;
+      margin: 0 0 var(--unit) 0;
+      height: calc(var(--unit) * 6);
+      width: 100%;
     }
 }

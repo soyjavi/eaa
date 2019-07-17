@@ -6,6 +6,7 @@
   overflow: hidden;
   position: relative;
   text-align: left;
+  transition: background var(--animation);
   width: 100%;
 }
 
