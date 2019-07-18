@@ -2,17 +2,23 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 const {
-  ALPHAVANTAGE, BOT, BOT_ARTICLES, CHANNEL_TRADERBOT, CHAT_ADMIN, CRYPTOPANIC,
+  PRODUCTION,
+  ALPHAVANTAGE, CRYPTOPANIC,
+  BOT, BOT_ARTICLES, CHANNEL_TRADERBOT, CHANNEL_ADMIN,
+  WALLET_KEY, WALLET_XPUB,
 } = process.env;
 
 export default {
   ENV: {
+    IS_PRODUCTION: PRODUCTION !== undefined,
     ALPHAVANTAGE,
+    CRYPTOPANIC,
     BOT,
     BOT_ARTICLES,
-    CHAT_ADMIN,
+    CHANNEL_ADMIN,
     CHANNEL_TRADERBOT,
-    CRYPTOPANIC,
+    WALLET_KEY,
+    WALLET_XPUB,
   },
 
   // -- SITE
@@ -32,27 +38,30 @@ export default {
 
   // -- STORE
   STORE: {
-    CRONS: {
-      filename: 'crons',
-      defaults: { articles: [] },
+    BOTS: {
+      filename: 'bots',
+      defaults: {
+        articles: [],
+        traderbot: [],
+      },
+    },
+    PAYMENTS: {
+      filename: 'payments',
+      defaults: { orders: [] },
     },
     POSTS: {
       filename: 'posts',
       defaults: { public: [], private: [] },
     },
-    SUBSCRIBERS: {
-      filename: 'subscribers',
-      defaults: {
-        public: [], monthly: [], bot: [], course: [],
-      },
-    },
     USERS: {
       filename: 'users',
-      defaults: { admins: [] },
-    },
-    LOGS: {
-      filename: 'logs',
-      defaults: { traderbot: [] },
+      defaults: {
+        admins: [],
+        subscribers: [],
+        bot: [],
+        course: [],
+        report: [],
+      },
     },
   },
 

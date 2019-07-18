@@ -14,7 +14,7 @@ import { error, request } from './src/middlewares';
 import crons from './src/crons';
 
 dotenv.config();
-const { PORT = 3000, TITLE } = process.env;
+const { PORT = 3000 } = process.env;
 
 const app = express();
 const server = http.createServer(app);
@@ -43,7 +43,7 @@ app.get('/', home);
 app.use(error);
 
 const listener = server.listen(PORT, () => {
-  console.log(`"${TITLE}" is ready on port ${listener.address().port}`);
+  console.log(`activistafinanciero.com is ready on port ${listener.address().port}`);
   crons.start();
 });
 

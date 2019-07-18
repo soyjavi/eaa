@@ -2,5 +2,6 @@
 .env
 dist
 node_modules
-store/crons.json
-store/logs.json
+store/bots.json
+store/payments.json
+store/users.json

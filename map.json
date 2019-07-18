@@ -1,15 +1,21 @@
 {
-  "traderbot": {
-    "required": ["message"],
-    "secure": true
+  "order": {
+    "method": "POST",
+    "required": ["product", "email", "fingerprint"],
+    "optional": ["telegram"]
+  },
+  "payment": {
+    "required": ["f", "ts"]
   },
   "subscribe": {
+    "method": "POST",
     "required": ["email"],
     "optional": ["fingerprint"]
   },
-  "cart": {
-    "required": ["email", "product", "amount"],
-    "optional": ["telegram"]
-  },
-  "status": {}
+  "status": {},
+  "traderbot": {
+    "method": "POST",
+    "required": ["message"],
+    "secure": true
+  }
 }

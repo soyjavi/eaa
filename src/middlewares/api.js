@@ -31,14 +31,11 @@ export default (req, res, next) => {
     let session;
 
     if (route.secure && !authorization) error = 'Acceso no permitido';
-    else {
+    else if (route.secure) {
       const users = new Storage(STORE.USERS);
       session = users.get('admins').findOne({ fingerprint: authorization });
       if (!session) error = 'Acceso no permitido';
     }
-    // if (!authorization) throw new Error('Acceso no permitido.');
-
-    // if (route.secure) // @TODO
 
     req.session = session;
     req.props = props;

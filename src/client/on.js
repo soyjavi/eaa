@@ -55,7 +55,6 @@ export default {
   traderBot,
 
   modeSubscribed(subscribed) {
-    // document.querySelectorAll('.banner.subscribe, .banner.bot:not(.admin)').forEach((el) => {
     document.querySelectorAll('*:not([data-role="admin"]) .banner').forEach((el) => {
       let method;
       if (el.classList.contains('subscribe')) method = subscribed ? 'add' : 'remove';
@@ -64,9 +63,4 @@ export default {
       el.classList[method]('hide');
     });
   },
-
-  // dashboard({ coin, period = '1D' }) {
-  //   dashboard.fetchTimeline();
-  //   dashboard.fetchTrend({ coin, period });
-  // },
 };

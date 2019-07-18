@@ -5,7 +5,7 @@ const { STORE } = C;
 
 export default (req, res) => {
   const posts = new Storage(STORE.POSTS);
-  const articles = new Storage(STORE.CRONS);
+  const articles = new Storage(STORE.BOTS);
   articles.get('articles');
 
   res.send(render('index', {

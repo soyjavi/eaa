@@ -7,7 +7,13 @@ import Telegram from 'telegraf/telegram';
 
 import { C } from '../common';
 
-const { ENV: { BOT_ARTICLES, CHAT_ADMIN, CRYPTOPANIC }, TELEGRAM_PROPS, STORE } = C;
+const {
+  ENV: {
+    BOT_ARTICLES, CHANNEL_ADMIN, CRYPTOPANIC, IS_PRODUCTION,
+  },
+  TELEGRAM_PROPS,
+  STORE,
+} = C;
 const BOT = '[🤖:cryptopanic]';
 const SERVICE = 'https://cryptopanic.com/api/v1/posts/';
 
@@ -25,18 +31,16 @@ const fetchData = async (uri, page) => {
 const sendMessage = ({
   title, urlSource, votes: { positive, negative } = {},
 }, telegram) => {
-  telegram.sendMessage(
-    CHAT_ADMIN,
-    `${BOT} 👍 ${positive}  👎 ${negative}\n[${title}](${urlSource})`,
-    TELEGRAM_PROPS,
-  );
+  const message = `${BOT} 👍 ${positive}  👎 ${negative}\n[${title}](${urlSource})`;
+  if (IS_PRODUCTION) telegram.sendMessage(CHANNEL_ADMIN, message, TELEGRAM_PROPS);
+  else console.log(message);
 };
 
 export default async () => {
   console.log(`${BOT} Searching new articles...`);
 
   const timestamp = (new Date()).getTime();
-  const store = new Storage(STORE.CRONS);
+  const store = new Storage(STORE.BOTS);
   const telegram = new Telegram(BOT_ARTICLES);
   const response = await fetch(`${SERVICE}?auth_token=${CRYPTOPANIC}&filter=rising&kind=news`);
   let newArticles = 0;

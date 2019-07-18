@@ -7,7 +7,7 @@ const { ENV: { BOT, CHANNEL_TRADERBOT }, STORE, TELEGRAM_PROPS } = C;
 const CODE = '`';
 
 export default ({ props, session }, res) => {
-  const logs = new Storage(STORE.LOGS);
+  const logs = new Storage(STORE.BOTS);
   let { message } = props;
   let symbol;
 
