@@ -1,6 +1,6 @@
 {
   "name": "af",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "on a long enough timeline the survival rate for everyone drops to zero.",
   "dependencies": {
     "body-parser": "1.19.0",

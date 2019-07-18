@@ -4,7 +4,7 @@ import { C, render } from '../common';
 const { STORE } = C;
 
 export default ({ session }, res) => {
-  const logs = new Storage(STORE.LOGS);
+  const logs = new Storage(STORE.BOTS);
   let logItems = '';
 
   logs.get('traderbot').value
