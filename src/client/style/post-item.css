@@ -52,10 +52,18 @@
       display: block;
       text-align: justify;
       font-size: var(--font-size-S);
-      height: calc(var(--unit) * 5);
-      text-overflow: ellipsis;
+      height: calc(var(--unit) * 4.5);
+      position: relative;
       overflow: hidden;
     }
+      .postItem .info p:after {
+        content: '...';
+        position: absolute;
+        background-color: var(--bg-color);
+        right: 0;
+        padding: 0 0 0 calc(var(--unit) / 6);
+        bottom : calc(var(--unit) / 4.5);
+      }
     .postItem .img {
       order: -1;
       margin: 0 0 var(--unit) 0;
