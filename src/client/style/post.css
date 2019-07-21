@@ -96,7 +96,7 @@
 
 @media (max-width: 767px) {
   [data-role="post"] h1 { font-size: var(--font-size-L); }
-  [data-role="post"] h1 + p { font-size: var(--font-size-S) }
+  [data-role="post"] h1 + p { font-size: var(--font-size-S); }
   [data-role="post"] .fullwidth { height: 38vh; }
 
   [data-role="post"] article blockquote {

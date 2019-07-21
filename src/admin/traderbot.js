@@ -11,13 +11,13 @@ export default ({ session }, res) => {
     .reverse()
     .slice(0, 32)
     .forEach((log) => {
-      logItems += render('traderbot-tableItem', log);
+      logItems += render('admin-traderbot-tableItem', log);
     });
 
   res.send(render('index', {
     role: 'admin',
     script: '<script src="/admin.js" defer></script>',
-    main: render('traderbot', {
+    main: render('admin-traderbot', {
       name: session.name.split(' ')[0],
       logs: logItems,
     }),

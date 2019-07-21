@@ -10,7 +10,7 @@ export default (req, res) => {
 
   res.send(render('index', {
     role: 'admin',
-    main: render('posts', {
+    main: render('admin-posts', {
       public: posts.get('public').value,
       private: posts.get('private').value,
       articles: articles.value,

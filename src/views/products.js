@@ -5,6 +5,6 @@ export default (req, res) => {
     role: 'products',
     main: render('products'),
     dialog: render('dialogCheckout'),
-    _script: render('scripts/drift'),
+    script: render('scripts/drift'),
   }));
 };
