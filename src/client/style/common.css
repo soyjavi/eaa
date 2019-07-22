@@ -40,7 +40,7 @@ button, .button {
   font-size: var(--font-size-XS);
   outline: 0;
   padding: calc(var(--unit) / 1.75) calc(var(--unit) / 1.25);
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   text-decoration: none;
   transition: background var(--animation);
 }
@@ -61,6 +61,11 @@ button, .button {
 
   button.outlined, .button.outlined {
     border: solid 1px var(--color);
+  }
+
+  button.large, .button.large {
+    font-size: var(--font-size-S);
+    padding: calc(var(--unit) / 1.25) calc(var(--unit) * 1.5);
   }
 
 form, .form { margin: var(--unit) 0; }
