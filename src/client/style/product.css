@@ -12,6 +12,11 @@
   /*font-family: var(--font-content) !important;*/
 }
 
+[data-role="product"] ul {
+  list-style: none;
+}
+
+
 [data-role="product"] h1 { font-size: calc(var(--unit) * 4); }
 
 [data-role="product"] h2 { font-size: var(--font-size-XL); }
@@ -103,10 +108,17 @@
   }
 
   [data-role="product"] .features > div { flex-wrap: wrap; }
+
+
+
     [data-role="product"] .features > div > * {
       font-size: var(--font-size-S);
       padding: 0 calc(var(--unit) * 2) calc(var(--unit) * 2) calc(var(--unit) * 2);
       width: 50%;
+    }
+
+    [data-role="product"] .features.thirds > div > * {
+      width: 33%;
     }
 
     [data-role="product"] .features > div strong {
@@ -114,5 +126,42 @@
       margin-bottom: calc(var(--unit) / 2);
     }
 
+  [data-role="product"] .testimonials h2 { text-align: center; }
 
+  [data-role="product"] .testimonials ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: var(--unit) 0;
+  }
+
+  [data-role="product"] .testimonials ul li {
+    flex: 0;
+    min-width: 33%;
+    max-width: 33%;
+    margin: var(--unit) 0;
+  }
+
+  [data-role="product"] .testimonials ul li {
+    margin-right: 5%;
+    /*margin-right: calc(var(--unit) * 2);*/
+  }
+
+
+  [data-role="product"] .testimonials ul li.large {
+    min-width: 57%;
+    flex: 2;
+  }
+
+  [data-role="product"] .testimonials ul li  > * { display: block; }
+
+  [data-role="product"] .testimonials ul li div {
+    background: var(--bg-opacity);
+    font-size: var(--font-size-S);
+    margin-bottom: calc(var(--unit) / 2);
+    padding: calc(var(--unit) * 2);
+  }
+
+  [data-role="product"] .testimonials ul li iframe {
+    width: 100%;
+  }
 
