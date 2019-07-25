@@ -127,7 +127,6 @@
 
     [data-role="product"] .testimonials ul li { margin-right: 5%; }
 
-
     [data-role="product"] .testimonials ul li.large {
       min-width: 57%;
       flex: 2;
@@ -149,7 +148,10 @@
 
 
 @media (max-width: 767px) {
-  [data-role="product"] > section.slogan { text-align: left; }
+  [data-role="product"] > section.slogan {
+    text-align: left;
+    padding-bottom: 0;
+  }
 
   [data-role="product"] > section.landing p { width: 100%; }
   [data-role="product"] h1 { font-size: var(--font-size-XL); }
@@ -173,9 +175,12 @@
       width: 100%;
     }
 
-
   [data-role="product"] .features.thirds { padding: var(--unit) 0; }
   [data-role="product"] .features.thirds > div > * { width: 100%; }
+
+  [data-role="product"] .testimonials ul { flex-direction: column; }
+    [data-role="product"] .testimonials ul li { max-width: 100%; }
+
 
 }
 
