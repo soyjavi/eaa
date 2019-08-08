@@ -1,13 +1,29 @@
 {
   "public": [
     {
-      "uri": "el-manifiesto-cyberpunk",
-      "featured": false,
-      "date": "2017/04/10",
-      "title": "El manifiesto cyberpunk",
-      "summary": "El manifiesto cyberpunk de Christian Kirtchev, escrito en 1997 y traducido al español. Lectura obligatoria para entender mejor las raíces ideológicas de las criptomonedas y las tecnologías actuales.",
+      "uri": "la-teoria-del-batido-de-dolar",
+      "date": "2019/08/06",
+      "title": "La teoria del batido de dólar",
+      "summary": "Conoce esta teoría por parte de Brent Johnson, CEO de Santiago Capital. Se basa en el fortalecimiento del dólar y las consecuencias que podrían tener en los mercados globales.",
       "author": "tyler",
-      "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0"
+      "image": "https://images.unsplash.com/photo-1475650522725-015d35677789"
+    },
+    {
+      "uri": "ha-comenzado-el-rally-del-oro",
+      "featured": true,
+      "date": "2019/08/04",
+      "title": "Ha comenzado el rally del oro?",
+      "summary": "El precio del oro ha superado la barrera de los $1.450 por onza, y los inversores que han estado al margen durante el año pasado se preguntan si finalmente es hora de agregar oro a sus carteras.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1517187654069-ba29110a1d9e"
+    },
+    {
+      "uri": "iran-legaliza-la-cripto-mineria",
+      "date": "2019/07/25",
+      "title": "Irán legaliza la cripto mineria",
+      "summary": "Irán está reconociendo oficialmente las cripto-monedas como una industria dentro de sus fronteras.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1557585580-cdf0764d8393"
     },
     {
       "uri": "el-origen-cyberpunk-de-bitcoin",
@@ -21,7 +37,6 @@
 
     {
       "uri": "trump-se-declara-en-contra-de-bitcoin",
-      "featured": true,
       "date": "2019/07/12",
       "title": "Trump declara oficialmente estar en contra de Bitcoin.",
       "summary": "Como no era de esperar Donald Trump, el presidente de los Estados Unidos, ha alterado twitter con sus opiniones sobre Bitcoin y el resto de criptomonedas.",
@@ -35,6 +50,14 @@
       "summary": "NVT es un indice disruptivo y especializado en la propia naturaleza de Bitcoin, alejandose de las tecnicas y metricas de trading contemporaneo.",
       "author": "tyler",
       "image": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0"
+    },
+    {
+      "uri": "el-manifiesto-cyberpunk",
+      "date": "2017/04/10",
+      "title": "El manifiesto cyberpunk",
+      "summary": "El manifiesto cyberpunk de Christian Kirtchev, escrito en 1997 y traducido al español. Lectura obligatoria para entender mejor las raíces ideológicas de las criptomonedas y las tecnologías actuales.",
+      "author": "tyler",
+      "image": "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0"
     },
     {
       "uri": "que-es-el-dinero",
@@ -60,7 +83,6 @@
       "author": "tyler",
       "image": "https://images.unsplash.com/photo-1558914482-f75b0419b420"
     }
-
   ],
   "private": []
 }
